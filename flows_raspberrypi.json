@@ -1,1 +1,4343 @@
-[{"id":"76cfa5d2.4bfa3c","type":"tab","label":"02-flowsStrukturieren","disabled":false,"info":"# Flows strukturieren\nFlows können schnell eine gewisse Komplexität und Unübersichtlichkeit erreichen. Dieser Flow soll verschiedene Möglichkeiten aufzeigen, Flows zu strukturieren und damit besser wartbar zu machen. Mittel sind:\n - Anzahl der Flows je Reiter\n - Anordnung der Nodes\n - der link-in- und der link-out-Node\n - Subflows\n - Gruppen\n\n# Messages gestalten\n - msg.topic nutzen\n\n# Dokumentation\nDokumentationsmöglichkeiten sind:\n - die Flow-Beschreibung (vgl. 1.1.3)\n - die jeweilige Node-Beschreibung (NODE-EIGENSCHAFTEN • BESCHREIBUNG)\n - der comment-Node\n\n# selstsprechende Namen\n"},{"id":"9608aeef.c21ce","type":"tab","label":"Flow 1","disabled":false,"info":""},{"id":"ddcd8ff8.74d1a","type":"tab","label":"Flow 2","disabled":false,"info":""},{"id":"eae6f870.124e68","type":"tab","label":"Flow 3","disabled":false,"info":""},{"id":"2ce6a838.6ea168","type":"tab","label":"Flow 4","disabled":false,"info":""},{"id":"b1b75497.a979a8","type":"tab","label":"History Browser","disabled":true,"info":""},{"id":"8d1f4239.bc1b7","type":"tab","label":"nochTesten","disabled":false,"info":""},{"id":"9928af8e.21852","type":"tab","label":"Crypto","disabled":true,"info":""},{"id":"52c29281.9046cc","type":"tab","label":"Flow 5","disabled":false,"info":""},{"id":"5730a686.4f7288","type":"subflow","name":"Bsp Subflow","info":"","category":"","in":[{"x":60,"y":40,"wires":[{"id":"8c5cb299.89775"}]}],"out":[{"x":520,"y":40,"wires":[{"id":"28a4a38c.49baac","port":0}]},{"x":520,"y":160,"wires":[{"id":"51a7a732.e41d28","port":0}]}],"env":[],"color":"#DDAA99","status":{"x":520,"y":100,"wires":[{"id":"28a4a38c.49baac","port":0}]}},{"id":"125619d1.c0fa4e","type":"group","z":"b1b75497.a979a8","name":"","style":{"fill":"#e3f3d3","label":true},"nodes":["e009e08a.487648","34b3eeda.b20502","956f27cf.e605a8","c6e89da7.c766e8","d94d7129.0b514"],"x":34,"y":539},{"id":"4c1e7f93.0d14a8","type":"group","z":"b1b75497.a979a8","style":{"stroke":"#999999","stroke-opacity":"1","fill":"none","fill-opacity":"1","label":true,"label-position":"nw","color":"#a4a4a4"},"nodes":["7a5c9ad4.dfa78c","e21faf7f.a00908","7c53b6d4.2ab54","eabf420f.1be678","7595a620.d7a3c8"],"x":34,"y":119},{"id":"b3b06e0a.0b2088","type":"group","z":"b1b75497.a979a8","name":"","style":{"label":true,"color":"#000000","fill":"#ffbfbf"},"nodes":["60f0508c.618a58","506dd40c.705c4c","25242708.318c2","49fcd691.c0d9a","1a5bc125.122db7","866568c4.55361"],"x":34,"y":439},{"id":"c054ed48.ca24e","type":"group","z":"b1b75497.a979a8","name":"","style":{"fill":"#bfdbef","label":true},"nodes":["cd6a932d.015208","333f28f3.fc738","b24a5eef.1429c","adfa0d99.c7b57","17b507de.c7f3d8"],"x":494,"y":219},{"id":"c151a9f4.a134a8","type":"group","z":"b1b75497.a979a8","name":"","style":{"fill":"#ffffbf","label":true},"nodes":["acdcd1ef.c5d6d8","86ace8a1.dccee8","f10a0f15.7ab608","bc4f62d5.8fe8a8","845236bb.3006d","32282c2b.fd6f0c"],"x":34,"y":639},{"id":"e7ab9317.044c3","type":"group","z":"b1b75497.a979a8","name":"","style":{"fill":"#bfbfbf","label":true},"nodes":["bed6f55c.70e99","d70a6028.665f28","c5b21a26.849748","d8df9471.b5d4c8","182da13.eb7735f","e890e960.b88ad","6ca7019c.dfbc"],"x":494,"y":39},{"id":"221f19a8.5d274e","type":"group","z":"9928af8e.21852","name":"Gui","style":{"fill":"#e3f3d3","label":true},"nodes":["f924800e.a804d","a1b5f872.d82d08"],"x":54,"y":179},{"id":"5e96112a.38e93","type":"group","z":"76cfa5d2.4bfa3c","name":"Echo-Gruppe","style":{"stroke":"#001f60","fill":"#bfdbef","label":true},"nodes":["12b82ce4.4703b3","30d19c4d.55fb84","ce196b97.5201b8"],"x":194,"y":619,"w":412,"h":122,"info":"# Beispiel einer Gruppe\n - weiterleiten und ergänzen einer Nachricht\n - 2-fach verzögerte Ausgabe\n"},{"id":"2bbf4e2.8db68b2","type":"ui_tab","name":"CO2 History","icon":"dashboard","order":2,"disabled":false,"hidden":false},{"id":"5345d7a1.deddd8","type":"ui_group","name":"History Browser","tab":"2bbf4e2.8db68b2","order":1,"disp":true,"width":"18","collapse":false},{"id":"dc6f0a4b.5fe898","type":"ui_base","theme":{"name":"theme-light","lightTheme":{"default":"#0094CE","baseColor":"#0094CE","baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif","edited":true,"reset":false},"darkTheme":{"default":"#097479","baseColor":"#097479","baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif","edited":false},"customTheme":{"name":"Untitled Theme 1","default":"#4B7930","baseColor":"#4B7930","baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"},"themeState":{"base-color":{"default":"#0094CE","value":"#0094CE","edited":false},"page-titlebar-backgroundColor":{"value":"#0094CE","edited":false},"page-backgroundColor":{"value":"#fafafa","edited":false},"page-sidebar-backgroundColor":{"value":"#ffffff","edited":false},"group-textColor":{"value":"#1bbfff","edited":false},"group-borderColor":{"value":"#ffffff","edited":false},"group-backgroundColor":{"value":"#ffffff","edited":false},"widget-textColor":{"value":"#111111","edited":false},"widget-backgroundColor":{"value":"#0094ce","edited":false},"widget-borderColor":{"value":"#ffffff","edited":false},"base-font":{"value":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"}},"angularTheme":{"primary":"indigo","accents":"blue","warn":"red","background":"grey"}},"site":{"name":"Node-RED Dashboard","hideToolbar":"false","allowSwipe":"false","lockMenu":"false","allowTempTheme":"true","dateFormat":"DD.MM.YYYY","sizes":{"sx":48,"sy":48,"gx":6,"gy":6,"cx":6,"cy":6,"px":0,"py":0}}},{"id":"62ad21f6.478228","type":"ui_group","name":"Cryptowährung","tab":"9ed4e3c0.ac177","order":1,"disp":true,"width":"6","collapse":false},{"id":"9ed4e3c0.ac177","type":"ui_tab","name":"Crypto","icon":"dashboard","disabled":false,"hidden":false},{"id":"de27c776.734598","type":"websocket-client","path":"wss://echo.websocket.org ","tls":"","wholemsg":"false"},{"id":"28b24ff3.2b8f1","type":"fritzbox-config","name":"","host":"192.168.178.1","port":"49000","ssl":false,"user":"admin"},{"id":"de2a4a70.8a65c8","type":"comment","z":"b1b75497.a979a8","name":"CO2 History File Browser","info":"1) Update the default folder in the Init node\n2) Update the default folder in the Reset node as well\n3) You can duplicate the Reset nodes and use them as saved shortcuts\n4) Check the Convert Timestamps function node if you want to see your dates in a different format. I just used the Javascript toISOString format.\n5) The Graph button can read any CSV file which have any number of values, but the first column always contains a timestamp column with javascript timestamp of the data point.","x":150,"y":40,"wires":[]},{"id":"373188f3.0b289","type":"inject","z":"b1b75497.a979a8","name":"Init","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":true,"onceDelay":0.1,"topic":"change","payload":"/data/co2data","payloadType":"str","x":110,"y":80,"wires":[["b78577b6.70c94"]]},{"id":"d70a6028.665f28","type":"function","z":"b1b75497.a979a8","g":"e7ab9317.044c3","name":"Format data","func":"// format the data for the dropdown\nmsg.options = [];\nfor (var i=0; i<msg.payload.length; i++) {\n    // This is a file\n    obj = {};\n    obj [msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '')]=msg.payload[i].name;\n msg.options.push(obj);\n}\nmsg.payload={};\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":750,"y":80,"wires":[["bed6f55c.70e99"]]},{"id":"d8df9471.b5d4c8","type":"template","z":"b1b75497.a979a8","g":"e7ab9317.044c3","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"<table width=\"100%\">\n    <tr><th>File Name</th><th>Size</th><th>Created</th><th>Changed</th></tr>\n {{#payload}}\n        <tr>\n            <td><a href=\"/download?filename={{name}}\" target=\"blank\">{{fname}}</a></td>\n <td>{{stat.size}}</td>\n            <td>{{stat.created}}</td>\n    <td>{{stat.changed}}</td>\n        </tr>\n {{/payload}}\n</table>\n","output":"str","x":980,"y":140,"wires":[["c5b21a26.849748"]]},{"id":"182da13.eb7735f","type":"function","z":"b1b75497.a979a8","g":"e7ab9317.044c3","name":"Convert timestamps","func":"for (var i=0; i<msg.payload.length; i++) {\n msg.payload[i].stat.created = msg.payload[i].stat.created.toISOString().slice(0, 19).replace('T', ' ');\n    msg.payload[i].stat.changed = msg.payload[i].stat.changed.toISOString().slice(0, 19).replace('T', ' ');\n    msg.payload[i].stat.accessed = msg.payload[i].stat.accessed.toISOString().slice(0, 19).replace('T', ' ');\n    msg.payload[i].stat.statusChanged = msg.payload[i].stat.statusChanged.toISOString().slice(0, 19).replace('T', ' ');\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n}\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":780,"y":140,"wires":[["d8df9471.b5d4c8"]]},{"id":"506dd40c.705c4c","type":"function","z":"b1b75497.a979a8","g":"b3b06e0a.0b2088","name":"Get filename","func":"// Get the filename from the flow context\nlet filename = flow.get(\"fileselected\");\n\n// check, if the filename is undefined that means it does not exist yet, nothing is selected yet\n// return: do not output anything\nif (filename===undefined) {\n return;\n}\n\n// return the filename to the file-in node to delete\nmsg.filename = filename;\n\nif (msg.filename.replace(/^.*(\\\\|\\/|\\:)/, '')[0]!==\".\") {\n    // Only do this if this is a file, we don't delete folders\n    // and delete the context/selection as we are deleting the file as well\n flow.set(\"fileselected\");\n    return msg;\n}","outputs":1,"noerr":0,"x":790,"y":480,"wires":[["25242708.318c2"]]},{"id":"25242708.318c2","type":"file","z":"b1b75497.a979a8","g":"b3b06e0a.0b2088","name":"Delete file","filename":"","appendNewline":true,"createDir":false,"overwriteFile":"delete","encoding":"none","x":960,"y":480,"wires":[["6ca7019c.dfbc","17b507de.c7f3d8"]]},{"id":"e009e08a.487648","type":"http in","z":"b1b75497.a979a8","g":"125619d1.c0fa4e","name":"","url":"/download","method":"get","upload":false,"swaggerDoc":"","x":140,"y":580,"wires":[["956f27cf.e605a8"]]},{"id":"34b3eeda.b20502","type":"http response","z":"b1b75497.a979a8","g":"125619d1.c0fa4e","name":"","statusCode":"","headers":{},"x":970,"y":580,"wires":[]},{"id":"956f27cf.e605a8","type":"function","z":"b1b75497.a979a8","g":"125619d1.c0fa4e","name":"Get the file name","func":"msg.filename = msg.req.query.filename;\nmsg.contentdisposition = \"attachment; filename=\\\"\" + msg.req.query.filename.replace(/^.*(\\\\|\\/|\\:)/, '') + \"\\\"\";\nreturn msg;\n","outputs":1,"noerr":0,"initialize":"","finalize":"","x":370,"y":580,"wires":[["c6e89da7.c766e8"]],"outputLabels":["Folder selected"]},{"id":"c6e89da7.c766e8","type":"file in","z":"b1b75497.a979a8","g":"125619d1.c0fa4e","name":"","filename":"","format":"","chunk":false,"sendError":false,"encoding":"none","x":580,"y":580,"wires":[["d94d7129.0b514"]]},{"id":"d94d7129.0b514","type":"change","z":"b1b75497.a979a8","g":"125619d1.c0fa4e","name":"Set Headers","rules":[{"t":"set","p":"headers","pt":"msg","to":"{}","tot":"json"},{"t":"set","p":"headers.content-type","pt":"msg","to":"text/csv","tot":"str"},{"t":"set","p":"headers.Content-Disposition","pt":"msg","to":"contentdisposition","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":810,"y":580,"wires":[["34b3eeda.b20502"]]},{"id":"86ace8a1.dccee8","type":"function","z":"b1b75497.a979a8","g":"c151a9f4.a134a8","name":"Get filename","func":"// Get the filename from the flow context\nlet filename = flow.get(\"fileselected\");\n\n// check, if the filename is undefined that means it does not exist yet, nothing is selected yet\n// return: do not output anything\nif (filename===undefined) {\n return;\n}\n\n// return the filename to the file-in node to delete\nmsg.filename = filename;\n\nif (msg.filename.replace(/^.*(\\\\|\\/|\\:)/, '')[0]!==\".\") {\n    // Only do this if this is a file, we don't delete folders\n    return msg;\n}","outputs":1,"noerr":0,"initialize":"","finalize":"","x":280,"y":680,"wires":[["f10a0f15.7ab608"]]},{"id":"f10a0f15.7ab608","type":"file in","z":"b1b75497.a979a8","g":"c151a9f4.a134a8","name":"","filename":"","format":"utf8","chunk":false,"sendError":false,"encoding":"none","x":450,"y":680,"wires":[["bc4f62d5.8fe8a8"]]},{"id":"bc4f62d5.8fe8a8","type":"csv","z":"b1b75497.a979a8","g":"c151a9f4.a134a8","name":"","sep":",","hdrin":true,"hdrout":"","multi":"mult","ret":"\\n","temp":"","skip":"0","strings":true,"include_empty_strings":false,"include_null_values":false,"x":590,"y":680,"wires":[["845236bb.3006d"]]},{"id":"845236bb.3006d","type":"function","z":"b1b75497.a979a8","g":"c151a9f4.a134a8","name":"Format data for chart","func":"var chart = [{\n    \"series\":[],\n \"data\":[],\n    \"labels\":[msg.filename]\n}];\n\n\n/*\nvar pressure = [];\nvar out2 = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n pressure.push({\"x\":msg.payload[i].timestamp, \"y\":msg.payload[i].pressure});\n out2.push({\"x\":msg.payload[i].timestamp, \"y\":msg.payload[i].out2*200});\n\n}\nchart[0].data.push(pressure);\nchart[0].data.push(out2);\n*/\n\nlet columns = 0;\n\nfor(var series in msg.payload[0]) {\n if(series!==\"timestamp\") {\n        chart[0].series.push(series);\n      chart[0].data.push([]);\n      columns++;\n    }\n}\n\n\nfor (var j=0; j<msg.payload.length; j++) {\n   for(var i=0;i<columns;i++) {\n       chart[0].data[i].push({\"x\":msg.payload[j].timestamp, \"y\":msg.payload[j][chart[0].series[i]]});\n   } \n}\n\n\n\n\nmsg.payload = chart;\n\nreturn msg;","outputs":1,"noerr":0,"x":780,"y":680,"wires":[["32282c2b.fd6f0c"]]},{"id":"1a5bc125.122db7","type":"change","z":"b1b75497.a979a8","g":"b3b06e0a.0b2088","name":"Set message","rules":[{"t":"set","p":"topic","pt":"msg","to":"Delete confirmation","tot":"str"},{"t":"set","p":"payload","pt":"msg","to":"Bist Du sicher das die Datei gelöscht werden soll?","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":290,"y":480,"wires":[["49fcd691.c0d9a"]]},{"id":"866568c4.55361","type":"switch","z":"b1b75497.a979a8","g":"b3b06e0a.0b2088","name":"","property":"payload","propertyType":"msg","rules":[{"t":"eq","v":"Yes","vt":"str"}],"checkall":"true","repair":false,"outputs":1,"x":630,"y":480,"wires":[["506dd40c.705c4c"]]},{"id":"b78577b6.70c94","type":"function","z":"b1b75497.a979a8","name":"Folder handling","func":"let folder = context.get(\"folder\");\nif (folder===undefined) {\n    folder=\"/\";\n    context.set(\"folder\", folder);\n}\n\nlet hidden = context.get(\"hidden\");\nif (hidden===undefined) {\n    hidden=false;\n    context.set(\"hidden\", hidden);\n}\n\nif (msg.topic===\"up\") {\n    var the_arr = folder.split('/');\n    the_arr.pop();\n    folder=the_arr.join('/'); \n    context.set(\"folder\", folder);\n}\nif (msg.topic===\"change\") {\n    folder=msg.payload;    \n    context.set(\"folder\", folder);\n}\nif (msg.topic===\"hidden\") {\n    hidden=msg.payload;    \n context.set(\"hidden\", hidden);\n}\n\nmsg.payload = {\"start\":folder, \"hidden\": hidden};\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":340,"y":260,"wires":[["6ca7019c.dfbc","cd6a932d.015208","17b507de.c7f3d8"]]},{"id":"db641113.d9fb1","type":"function","z":"b1b75497.a979a8","name":"Change folder","func":"// Get the filename from the flow context\nlet folderselected = flow.get(\"folderselected\");\n\n// check, if the filename is undefined that means it does not exist yet, nothing is selected yet\n// return: do not output anything\nif (folderselected===undefined) {\n    return;\n}\n\nmsg.topic = \"change\";\nmsg.payload = folderselected;\n\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":340,"y":320,"wires":[["b78577b6.70c94"]]},{"id":"b24a5eef.1429c","type":"function","z":"b1b75497.a979a8","g":"c054ed48.ca24e","name":"Format data","func":"// format the data for the dropdown\nmsg.options = [];\nfor (var i=0; i<msg.payload.length; i++) {\n    // This is a foler\n    obj = {};\n    obj [\"[\"+msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '')+\"]\"]=msg.payload[i].name;\n msg.options.push(obj);\n}\nmsg.payload={};\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":750,"y":320,"wires":[["333f28f3.fc738"]]},{"id":"e890e960.b88ad","type":"change","z":"b1b75497.a979a8","g":"e7ab9317.044c3","name":"Save selection","rules":[{"t":"set","p":"fileselected","pt":"flow","to":"payload","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":1140,"y":80,"wires":[[]]},{"id":"adfa0d99.c7b57","type":"change","z":"b1b75497.a979a8","g":"c054ed48.ca24e","name":"Save selection","rules":[{"t":"set","p":"folderselected","pt":"flow","to":"payload","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":1140,"y":320,"wires":[[]]},{"id":"ed5d9d89.b59408","type":"comment","z":"b1b75497.a979a8","name":"Install: node-red-contrib-fs","info":"","x":570,"y":760,"wires":[]},{"id":"83fefc4d.7fe8c8","type":"comment","z":"b1b75497.a979a8","name":"(c) 2020 - 2021 Thomas Wenzlaff www.wenzlaff.info","info":"","x":230,"y":760,"wires":[]},{"id":"291a6bb0.227b1c","type":"comment","z":"b1b75497.a979a8","name":"Pfad anpassen in: Init + Reset + Files + Folder","info":"","x":870,"y":760,"wires":[]},{"id":"7a5c9ad4.dfa78c","type":"ui_button","z":"b1b75497.a979a8","g":"4c1e7f93.0d14a8","name":"","group":"5345d7a1.deddd8","order":1,"width":"2","height":"1","passthru":false,"label":"Refresh","tooltip":"","color":"","bgcolor":"","icon":"refresh","payload":"","payloadType":"str","topic":"refresh","topicType":"str","x":120,"y":160,"wires":[["b78577b6.70c94"]]},{"id":"60f0508c.618a58","type":"ui_button","z":"b1b75497.a979a8","g":"b3b06e0a.0b2088","name":"","group":"5345d7a1.deddd8","order":10,"width":"2","height":"1","passthru":false,"label":"Delete","tooltip":"","color":"","bgcolor":"","icon":"delete","payload":"","payloadType":"str","topic":"","topicType":"str","x":110,"y":480,"wires":[["1a5bc125.122db7"]]},{"id":"acdcd1ef.c5d6d8","type":"ui_button","z":"b1b75497.a979a8","g":"c151a9f4.a134a8","name":"","group":"5345d7a1.deddd8","order":11,"width":"2","height":"1","passthru":false,"label":"Graph","tooltip":"","color":"","bgcolor":"","icon":"show_chart","payload":"","payloadType":"str","topic":"","topicType":"str","x":110,"y":680,"wires":[["86ace8a1.dccee8"]]},{"id":"e21faf7f.a00908","type":"ui_button","z":"b1b75497.a979a8","g":"4c1e7f93.0d14a8","name":"","group":"5345d7a1.deddd8","order":3,"width":"2","height":"1","passthru":false,"label":"Up","tooltip":"","color":"","bgcolor":"","icon":"arrow_upwards","payload":"","payloadType":"str","topic":"up","topicType":"str","x":130,"y":240,"wires":[["b78577b6.70c94"]]},{"id":"7c53b6d4.2ab54","type":"ui_button","z":"b1b75497.a979a8","g":"4c1e7f93.0d14a8","name":"","group":"5345d7a1.deddd8","order":8,"width":"2","height":"1","passthru":false,"label":"Open","tooltip":"","color":"","bgcolor":"","icon":"folder_open","payload":"","payloadType":"str","topic":"","topicType":"str","x":130,"y":320,"wires":[["db641113.d9fb1"]]},{"id":"eabf420f.1be678","type":"ui_button","z":"b1b75497.a979a8","g":"4c1e7f93.0d14a8","name":"","group":"5345d7a1.deddd8","order":2,"width":"2","height":"1","passthru":false,"label":"Reset","tooltip":"","color":"","bgcolor":"","icon":"autorenew","payload":"/data/co2data","payloadType":"str","topic":"change","topicType":"str","x":130,"y":200,"wires":[["b78577b6.70c94"]]},{"id":"bed6f55c.70e99","type":"ui_dropdown","z":"b1b75497.a979a8","g":"e7ab9317.044c3","name":"File Selector","label":"","tooltip":"","place":"Select a file","group":"5345d7a1.deddd8","order":9,"width":"5","height":"1","passthru":false,"options":[{"label":"","value":"","type":"str"}],"payload":"","topic":"","x":950,"y":80,"wires":[["e890e960.b88ad"]]},{"id":"333f28f3.fc738","type":"ui_dropdown","z":"b1b75497.a979a8","g":"c054ed48.ca24e","name":"Folder Selector","label":"","tooltip":"","place":"Select a folder","group":"5345d7a1.deddd8","order":7,"width":"5","height":"1","passthru":false,"multiple":false,"options":[{"label":"","value":"","type":"str"}],"payload":"","topic":"","topicType":"str","x":940,"y":320,"wires":[["adfa0d99.c7b57"]]},{"id":"7595a620.d7a3c8","type":"ui_switch","z":"b1b75497.a979a8","d":true,"g":"4c1e7f93.0d14a8","name":"","label":"Hidden","tooltip":"Show hidden files or not","group":"5345d7a1.deddd8","order":5,"width":"2","height":"1","passthru":false,"decouple":"false","topic":"hidden","topicType":"str","style":"","onvalue":"true","onvalueType":"bool","onicon":"check_box","oncolor":"#000000","offvalue":"false","offvalueType":"bool","officon":"check_box_outline_blank","offcolor":"#000000","animate":true,"x":120,"y":280,"wires":[["b78577b6.70c94"]]},{"id":"cd6a932d.015208","type":"ui_text","z":"b1b75497.a979a8","g":"c054ed48.ca24e","group":"5345d7a1.deddd8","order":4,"width":"9","height":"1","name":"","label":"Folder:","format":"{{msg.payload.start}}","layout":"row-left","x":580,"y":260,"wires":[]},{"id":"32282c2b.fd6f0c","type":"ui_chart","z":"b1b75497.a979a8","g":"c151a9f4.a134a8","name":"","group":"5345d7a1.deddd8","order":12,"width":"18","height":"6","label":"","chartType":"line","legend":"false","xformat":"HH:mm:ss","interpolate":"linear","nodata":"","dot":false,"ymin":"","ymax":"","removeOlder":1,"removeOlderPoints":"","removeOlderUnit":"3600","cutout":0,"useOneColor":false,"colors":["#1f77b4","#aec7e8","#ff7f0e","#2ca02c","#98df8a","#d62728","#ff9896","#9467bd","#c5b0d5"],"outputs":1,"x":970,"y":680,"wires":[[]]},{"id":"49fcd691.c0d9a","type":"ui_toast","z":"b1b75497.a979a8","g":"b3b06e0a.0b2088","position":"dialog","displayTime":"3","highlight":"","sendall":false,"outputs":1,"ok":"Yes","cancel":"No","raw":false,"topic":"","name":"Confirmation","x":470,"y":480,"wires":[["866568c4.55361"]]},{"id":"c5b21a26.849748","type":"ui_template","z":"b1b75497.a979a8","g":"e7ab9317.044c3","group":"5345d7a1.deddd8","name":"","order":6,"width":"18","height":"6","format":"<div ng-bind-html=\"msg.payload\" height=\"400\" style=\"height: 400px;\"><br/>\n</div>\n\n","storeOutMessages":true,"fwdInMessages":true,"resendOnRefresh":false,"templateScope":"local","x":1120,"y":140,"wires":[[]]},{"id":"6ca7019c.dfbc","type":"fs-file-lister","z":"b1b75497.a979a8","g":"e7ab9317.044c3","name":"Files","start":"/data/co2data","pattern":"*.*","folders":"*","hidden":false,"lstype":"files","path":true,"single":true,"depth":0,"stat":true,"showWarnings":false,"x":570,"y":80,"wires":[["d70a6028.665f28","182da13.eb7735f"]]},{"id":"17b507de.c7f3d8","type":"fs-file-lister","z":"b1b75497.a979a8","g":"c054ed48.ca24e","name":"Folders","start":"/data/co2data","pattern":"*.*","folders":"*","hidden":false,"lstype":"directories","path":true,"single":true,"depth":0,"stat":true,"showWarnings":false,"x":580,"y":320,"wires":[["b24a5eef.1429c"]]},{"id":"1f6f62c1.bb2a8d","type":"inject","z":"8d1f4239.bc1b7","name":"http://domain.tld/wp-admin/","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":"","topic":"","payload":"http://iotgrizzly.de/wp-admin/","payloadType":"str","x":290,"y":460,"wires":[["e11685bd.764ba8"]]},{"id":"e11685bd.764ba8","type":"credentials","z":"8d1f4239.bc1b7","name":"","props":[{"value":"username","type":"msg"},{"value":"password","type":"msg"}],"x":290,"y":540,"wires":[["42d713c9.71742c","461053fe.43b40c"]]},{"id":"497f2b6e.c3e6f4","type":"html","z":"8d1f4239.bc1b7","name":"","property":"","outproperty":"","tag":".update-count","ret":"html","as":"single","x":470,"y":680,"wires":[["7b9f05e0.6869ac"]]},{"id":"dd1260eb.1a21d","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":670,"y":620,"wires":[]},{"id":"7b9f05e0.6869ac","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":670,"y":680,"wires":[]},{"id":"42d713c9.71742c","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":670,"y":540,"wires":[]},{"id":"d7a921dd.eaadd","type":"comment","z":"8d1f4239.bc1b7","name":"keine Antwort nbrowser","info":"","x":520,"y":600,"wires":[]},{"id":"5e8db598.890c5c","type":"nbrowser","z":"8d1f4239.bc1b7","name":"","methods":[{"name":"gotoURL","func":"goto","params":[{"type":"str","value":"https://mypoweraccount.saskpower.com/MyAccount/Login","typeDefault":"str"}]},{"name":"wait","func":"wait","params":[{"type":"str","value":"20","typeDefault":"str"}]},{"name":"type","func":"type","params":[{"type":"str","value":"#signInName","typeDefault":"str"},{"type":"msg","value":"emailaddress","typeDefault":"str"}]},{"name":"type","func":"type","params":[{"type":"str","value":"#password","typeDefault":"str"},{"type":"msg","value":"password","typeDefault":"str"}]},{"name":"click","func":"click","params":[{"type":"str","value":"#next","typeDefault":"str"}]},{"name":"getText","func":"getText","params":[{"type":"str","value":"#VTX_AccountOverview > div:nth-child(3) > div > div.col-sm-5 > div:nth-child(1) > div.panel-body.noform > table > tbody > tr:nth-child(4) > td.total.right","typeDefault":"str"},{"type":"output","value":1,"typeDefault":"output"}]},{"name":"getText","func":"getText","params":[{"type":"str","value":"#VTX_AccountOverview > div:nth-child(3) > div > div.col-sm-5 > div:nth-child(1) > div.panel-body.noform > div.payment_message","typeDefault":"str"},{"type":"output","value":2,"typeDefault":"output"}]}],"prop":"nbrowser","propout":"payload","object":"msg","objectout":"msg","close":true,"show":true,"ssl":true,"outputs":2,"x":1100,"y":460,"wires":[["88901fe5.a36e9"],["88901fe5.a36e9"]]},{"id":"7147b3f1.557ebc","type":"credentials","z":"8d1f4239.bc1b7","name":"SaskPower Credentials","props":[{"value":"emailaddress","type":"msg"},{"value":"password","type":"msg"}],"x":870,"y":460,"wires":[["5e8db598.890c5c","eb3f6ad1.ef75f8","64e37a0f.339a24","81c1d61c.b94088"]]},{"id":"b426e4a.05bd318","type":"inject","z":"8d1f4239.bc1b7","name":"Get SaskPower Bill","props":[{"p":"payload"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"https://mypoweraccount.saskpower.com/MyAccount/Login","payloadType":"str","x":610,"y":460,"wires":[["7147b3f1.557ebc"]]},{"id":"88901fe5.a36e9","type":"debug","z":"8d1f4239.bc1b7","name":"Output","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":1270,"y":460,"wires":[]},{"id":"eb3f6ad1.ef75f8","type":"debug","z":"8d1f4239.bc1b7","name":"URL","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":1050,"y":520,"wires":[]},{"id":"64e37a0f.339a24","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"emailaddress","targetType":"msg","x":1090,"y":560,"wires":[]},{"id":"81c1d61c.b94088","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"password","targetType":"msg","x":1080,"y":600,"wires":[]},{"id":"5303336c.f0d85c","type":"comment","z":"8d1f4239.bc1b7","name":"lt. Forum auch problematisch","info":"","x":1090,"y":420,"wires":[]},{"id":"24f1c7ed.41a608","type":"inject","z":"8d1f4239.bc1b7","name":"https://iotgrizzly.de","props":[{"p":"payload"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"https://iotgrizzly.de","payloadType":"str","x":250,"y":800,"wires":[["4a8f2187.e24fd","b43d6831.d70a18"]]},{"id":"ade8cdb4.861cb","type":"debug","z":"8d1f4239.bc1b7","name":"Output","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":790,"y":800,"wires":[]},{"id":"4a8f2187.e24fd","type":"debug","z":"8d1f4239.bc1b7","name":"URL","active":false,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":530,"y":860,"wires":[]},{"id":"a6c0b283.a7997","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"emailaddress","targetType":"msg","x":730,"y":900,"wires":[]},{"id":"31a273bc.a98aec","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"password","targetType":"msg","x":720,"y":940,"wires":[]},{"id":"89769e3c.9eb2d","type":"comment","z":"8d1f4239.bc1b7","name":"lt. Forum auch problematisch","info":"","x":730,"y":760,"wires":[]},{"id":"461053fe.43b40c","type":"nbrowser","z":"8d1f4239.bc1b7","name":"","methods":[{"name":"gotoURL","func":"goto","params":[{"type":"msg","value":"payload","typeDefault":"str"}]},{"name":"type","func":"type","params":[{"type":"str","value":"#user_login","typeDefault":"str"},{"type":"msg","value":"username","typeDefault":"str"}]},{"name":"type","func":"type","params":[{"type":"str","value":"#user_pass","typeDefault":"str"},{"type":"msg","value":"password","typeDefault":"str"}]}],"prop":"nbrowser","propout":"payload","object":"msg","objectout":"msg","close":false,"show":true,"ssl":false,"outputs":1,"x":320,"y":620,"wires":[["497f2b6e.c3e6f4"]]},{"id":"eae8ce4b.31df8","type":"nbrowser","z":"8d1f4239.bc1b7","name":"","methods":[{"name":"gotoURL","func":"goto","params":[{"type":"msg","value":"payload","typeDefault":"str"}]},{"name":"type","func":"type","params":[{"type":"str","value":"#user_login","typeDefault":"str"},{"type":"msg","value":"username","typeDefault":"str"}]},{"name":"type","func":"type","params":[{"type":"str","value":"#user_pass","typeDefault":"str"},{"type":"msg","value":"password","typeDefault":"str"}]},{"name":"click","func":"click","params":[{"type":"str","value":"#wp-submit","typeDefault":"str"}]},{"name":"wait","func":"wait","params":[{"type":"str","value":"#welcome-panel","typeDefault":"str"}]}],"prop":"nbrowser","propout":"payload","object":"msg","objectout":"msg","close":false,"show":true,"ssl":false,"outputs":1,"x":138,"y":652.6666870117188,"wires":[[]]},{"id":"b43d6831.d70a18","type":"nbrowser","z":"8d1f4239.bc1b7","name":"","methods":[{"name":"gotoURL","func":"goto","params":[{"type":"msg","value":"payload","typeDefault":"str"}]},{"name":"wait","func":"wait","params":[{"type":"str","value":"2","typeDefault":"str"}]},{"name":"click","func":"click","params":[{"type":"str","value":"#esp32","typeDefault":"str"}]},{"name":"getHeaders","func":"getHeaders","params":[{"type":"output","value":1,"typeDefault":"output"}]},{"name":"getText","func":"getText","params":[{"type":"str","value":"#VTX_AccountOverview > div:nth-child(3) > div > div.col-sm-5 > div:nth-child(1) > div.panel-body.noform > div.payment_message","typeDefault":"str"},{"type":"output","value":2,"typeDefault":"output"}]}],"prop":"nbrowser","propout":"payload","object":"msg","objectout":"msg","close":true,"show":true,"ssl":true,"outputs":2,"x":500,"y":800,"wires":[["ade8cdb4.861cb"],["ade8cdb4.861cb"]]},{"id":"2146e559.01ab5a","type":"inject","z":"8d1f4239.bc1b7","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":1360,"y":780,"wires":[["67ee989.1b64968"]]},{"id":"67ee989.1b64968","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":1560,"y":780,"wires":[]},{"id":"d98219fd.9a8b48","type":"inject","z":"8d1f4239.bc1b7","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":1330,"y":900,"wires":[["f368f344.3ba42"]]},{"id":"88fd44ae.7ab8d8","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":1800,"y":900,"wires":[]},{"id":"f368f344.3ba42","type":"openweathermap","z":"8d1f4239.bc1b7","name":"","wtype":"current","lon":"","lat":"","city":"Berlin","country":"Germany","language":"de","x":1510,"y":900,"wires":[["88fd44ae.7ab8d8"]]},{"id":"b6d8ee2.e49c61","type":"inject","z":"8d1f4239.bc1b7","name":"http://domain.tld/wp-admin/","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":"","topic":"","payload":"http://iotgrizzly.de/wp-admin/","payloadType":"str","x":1440,"y":1040,"wires":[["4fc19b70.3973f4"]]},{"id":"4fc19b70.3973f4","type":"credentials","z":"8d1f4239.bc1b7","name":"","props":[{"value":"username","type":"msg"},{"value":"password","type":"msg"}],"x":1440,"y":1120,"wires":[["7ccdc9fa.8c61a8","d6febfa0.43668"]]},{"id":"7e2d2875.841248","type":"html","z":"8d1f4239.bc1b7","name":"","property":"","outproperty":"","tag":".update-count","ret":"html","as":"single","x":1620,"y":1260,"wires":[["1e26ea00.aa6536"]]},{"id":"9feff75c.66c958","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":1820,"y":1200,"wires":[]},{"id":"1e26ea00.aa6536","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":1820,"y":1260,"wires":[]},{"id":"7ccdc9fa.8c61a8","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":1820,"y":1120,"wires":[]},{"id":"70faa224.b26bec","type":"comment","z":"8d1f4239.bc1b7","name":"keine Antwort nbrowser","info":"","x":1670,"y":1180,"wires":[]},{"id":"8e39ab04.8f5408","type":"secret","z":"8d1f4239.bc1b7","name":"IFTTT API Key","x":1470,"y":1880,"wires":[["f5822e16.8d2eb","863787a4.5987a8"]]},{"id":"f5822e16.8d2eb","type":"template","z":"8d1f4239.bc1b7","name":"Set msg.url","field":"url","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"https://maker.ifttt.com/trigger/doorbell/with/key/{{secret}}","x":1580,"y":1940,"wires":[["49d28c9f.972b54","f320df11.43aee"]]},{"id":"f320df11.43aee","type":"http request","z":"8d1f4239.bc1b7","name":"IFTTT","method":"GET","ret":"txt","url":"","x":1740,"y":1960,"wires":[["36bcdf5d.cd1a3"]]},{"id":"49d28c9f.972b54","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"console":"false","complete":"true","x":1740,"y":1920,"wires":[]},{"id":"1e0aff4a.d3d851","type":"inject","z":"8d1f4239.bc1b7","name":"","repeat":"","crontab":"","once":false,"topic":"","payload":"","payloadType":"date","x":1350,"y":1820,"wires":[["8e39ab04.8f5408"]]},{"id":"863787a4.5987a8","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"console":"false","complete":"true","x":1725.0130004882812,"y":1875.0364990234375,"wires":[]},{"id":"36bcdf5d.cd1a3","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"console":"false","complete":"true","x":1880,"y":1960,"wires":[]},{"id":"cbef02f6.fc158","type":"comment","z":"8d1f4239.bc1b7","name":"IFTTT API-Key fehlt noch, noch nicht übertragen","info":"","x":1630,"y":1820,"wires":[]},{"id":"b27e269e.a88d28","type":"nbrowser","z":"8d1f4239.bc1b7","name":"","methods":[{"name":"gotoURL","func":"goto","params":[{"type":"str","value":"https://mypoweraccount.saskpower.com/MyAccount/Login","typeDefault":"str"}]},{"name":"wait","func":"wait","params":[{"type":"str","value":"20","typeDefault":"str"}]},{"name":"type","func":"type","params":[{"type":"str","value":"#signInName","typeDefault":"str"},{"type":"msg","value":"emailaddress","typeDefault":"str"}]},{"name":"type","func":"type","params":[{"type":"str","value":"#password","typeDefault":"str"},{"type":"msg","value":"password","typeDefault":"str"}]},{"name":"click","func":"click","params":[{"type":"str","value":"#next","typeDefault":"str"}]},{"name":"getText","func":"getText","params":[{"type":"str","value":"#VTX_AccountOverview > div:nth-child(3) > div > div.col-sm-5 > div:nth-child(1) > div.panel-body.noform > table > tbody > tr:nth-child(4) > td.total.right","typeDefault":"str"},{"type":"output","value":1,"typeDefault":"output"}]},{"name":"getText","func":"getText","params":[{"type":"str","value":"#VTX_AccountOverview > div:nth-child(3) > div > div.col-sm-5 > div:nth-child(1) > div.panel-body.noform > div.payment_message","typeDefault":"str"},{"type":"output","value":2,"typeDefault":"output"}]}],"prop":"nbrowser","propout":"payload","object":"msg","objectout":"msg","close":true,"show":true,"ssl":true,"outputs":2,"x":2250,"y":1040,"wires":[[],[]]},{"id":"316c3892.c8d3f8","type":"credentials","z":"8d1f4239.bc1b7","name":"SaskPower Credentials","props":[{"value":"emailaddress","type":"msg"},{"value":"password","type":"msg"}],"x":2020,"y":1040,"wires":[["b27e269e.a88d28","7eee7607.ebf0e8","b2aaeb01.348ce8","fdf2d063.6e64"]]},{"id":"4c371f9e.fe49","type":"inject","z":"8d1f4239.bc1b7","name":"Get SaskPower Bill","props":[{"p":"payload"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"https://mypoweraccount.saskpower.com/MyAccount/Login","payloadType":"str","x":1760,"y":1040,"wires":[["316c3892.c8d3f8"]]},{"id":"7eee7607.ebf0e8","type":"debug","z":"8d1f4239.bc1b7","name":"URL","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":2200,"y":1100,"wires":[]},{"id":"b2aaeb01.348ce8","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"emailaddress","targetType":"msg","x":2240,"y":1140,"wires":[]},{"id":"fdf2d063.6e64","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"password","targetType":"msg","x":2230,"y":1180,"wires":[]},{"id":"6e5e8a42.9eced4","type":"comment","z":"8d1f4239.bc1b7","name":"lt. Forum auch problematisch","info":"","x":2240,"y":1000,"wires":[]},{"id":"b2778444.04b7c8","type":"inject","z":"8d1f4239.bc1b7","name":"https://iotgrizzly.de","props":[{"p":"payload"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"https://iotgrizzly.de","payloadType":"str","x":1400,"y":1380,"wires":[["44dd8d9d.5f4924","fa6e14c0.d1f538"]]},{"id":"38f85fca.69878","type":"debug","z":"8d1f4239.bc1b7","name":"Output","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":1940,"y":1380,"wires":[]},{"id":"44dd8d9d.5f4924","type":"debug","z":"8d1f4239.bc1b7","name":"URL","active":false,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":1680,"y":1440,"wires":[]},{"id":"1d4e4fc.e03c6b","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"emailaddress","targetType":"msg","x":1880,"y":1480,"wires":[]},{"id":"7091746b.bfed9c","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"password","targetType":"msg","x":1870,"y":1520,"wires":[]},{"id":"7662fa0e.d84144","type":"comment","z":"8d1f4239.bc1b7","name":"lt. Forum auch problematisch","info":"","x":1880,"y":1340,"wires":[]},{"id":"d6febfa0.43668","type":"nbrowser","z":"8d1f4239.bc1b7","name":"","methods":[{"name":"gotoURL","func":"goto","params":[{"type":"msg","value":"payload","typeDefault":"str"}]},{"name":"type","func":"type","params":[{"type":"str","value":"#user_login","typeDefault":"str"},{"type":"msg","value":"username","typeDefault":"str"}]},{"name":"type","func":"type","params":[{"type":"str","value":"#user_pass","typeDefault":"str"},{"type":"msg","value":"password","typeDefault":"str"}]}],"prop":"nbrowser","propout":"payload","object":"msg","objectout":"msg","close":false,"show":true,"ssl":false,"outputs":1,"x":1470,"y":1200,"wires":[["7e2d2875.841248"]]},{"id":"4cf6d7d9.888d38","type":"nbrowser","z":"8d1f4239.bc1b7","name":"","methods":[{"name":"gotoURL","func":"goto","params":[{"type":"msg","value":"payload","typeDefault":"str"}]},{"name":"type","func":"type","params":[{"type":"str","value":"#user_login","typeDefault":"str"},{"type":"msg","value":"username","typeDefault":"str"}]},{"name":"type","func":"type","params":[{"type":"str","value":"#user_pass","typeDefault":"str"},{"type":"msg","value":"password","typeDefault":"str"}]},{"name":"click","func":"click","params":[{"type":"str","value":"#wp-submit","typeDefault":"str"}]},{"name":"wait","func":"wait","params":[{"type":"str","value":"#welcome-panel","typeDefault":"str"}]}],"prop":"nbrowser","propout":"payload","object":"msg","objectout":"msg","close":false,"show":true,"ssl":false,"outputs":1,"x":1288,"y":1232.6666870117188,"wires":[[]]},{"id":"fa6e14c0.d1f538","type":"nbrowser","z":"8d1f4239.bc1b7","name":"","methods":[{"name":"gotoURL","func":"goto","params":[{"type":"msg","value":"payload","typeDefault":"str"}]},{"name":"wait","func":"wait","params":[{"type":"str","value":"2","typeDefault":"str"}]},{"name":"click","func":"click","params":[{"type":"str","value":"#esp32","typeDefault":"str"}]},{"name":"getHeaders","func":"getHeaders","params":[{"type":"output","value":1,"typeDefault":"output"}]},{"name":"getText","func":"getText","params":[{"type":"str","value":"#VTX_AccountOverview > div:nth-child(3) > div > div.col-sm-5 > div:nth-child(1) > div.panel-body.noform > div.payment_message","typeDefault":"str"},{"type":"output","value":2,"typeDefault":"output"}]}],"prop":"nbrowser","propout":"payload","object":"msg","objectout":"msg","close":true,"show":true,"ssl":true,"outputs":2,"x":1650,"y":1380,"wires":[["38f85fca.69878"],["38f85fca.69878"]]},{"id":"4735f3e4.13a11c","type":"inject","z":"8d1f4239.bc1b7","name":"Hallo","repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"Hallo da draußen !","payloadType":"str","x":1560,"y":2480,"wires":[["62aa4515.bac78c"]]},{"id":"af117a24.e675f8","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","x":1860,"y":2540,"wires":[]},{"id":"62aa4515.bac78c","type":"websocket out","z":"8d1f4239.bc1b7","name":"","server":"","client":"de27c776.734598","x":1820,"y":2480,"wires":[]},{"id":"5f435726.90da48","type":"comment","z":"8d1f4239.bc1b7","name":"Beispiel websocket","info":"","x":1340,"y":2480,"wires":[]},{"id":"4c1ae4e4.9bb57c","type":"websocket in","z":"8d1f4239.bc1b7","name":"","server":"","client":"de27c776.734598","x":1610,"y":2540,"wires":[["af117a24.e675f8"]]},{"id":"28999e78.57ae72","type":"comment","z":"8d1f4239.bc1b7","name":"Beispiel TCP-Request","info":"","x":1350,"y":2160,"wires":[]},{"id":"fb380d7.51dc8f","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","x":2020,"y":2400,"wires":[]},{"id":"53599ce9.93ca14","type":"inject","z":"8d1f4239.bc1b7","name":"","repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":1570,"y":2160,"wires":[["bfcb8fc6.83afa"]]},{"id":"bfcb8fc6.83afa","type":"function","z":"8d1f4239.bc1b7","name":"inject GET ","func":"msg.payload = \"GET / HTTP/1.1\\r\\n\\r\\nHost: www.google.com\"\nreturn msg;","outputs":1,"noerr":0,"x":1700,"y":2220,"wires":[["26388c06.693e54"]]},{"id":"9b34aaef.b26a98","type":"function","z":"8d1f4239.bc1b7","name":"aufbereiten","func":"msg.payload = msg.payload.toString('utf8');\nreturn msg;","outputs":1,"noerr":0,"x":1900,"y":2340,"wires":[["fb380d7.51dc8f"]]},{"id":"26388c06.693e54","type":"tcp request","z":"8d1f4239.bc1b7","server":"www.google.com","port":"80","out":"time","splitc":"10000","name":"GOOGLE","x":1790,"y":2280,"wires":[["9b34aaef.b26a98"]]},{"id":"888c846b.796b88","type":"http in","z":"8d1f4239.bc1b7","name":"","url":"/gibMirDatei","method":"get","upload":false,"swaggerDoc":"","x":1570,"y":2620,"wires":[["ed2cd41.be51d28"]]},{"id":"ed2cd41.be51d28","type":"file in","z":"8d1f4239.bc1b7","name":"","filename":"/tmp/node-red.png","format":"","x":1760,"y":2620,"wires":[["925efc28.6f8d5"]]},{"id":"925efc28.6f8d5","type":"change","z":"8d1f4239.bc1b7","name":"Set Headers","rules":[{"t":"set","p":"headers","pt":"msg","to":"{}","tot":"json"},{"t":"set","p":"headers.content-type","pt":"msg","to":"image/png","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":1960,"y":2620,"wires":[["ab39866f.c0b938"]]},{"id":"ab39866f.c0b938","type":"http response","z":"8d1f4239.bc1b7","name":"","statusCode":"","headers":{},"x":2120,"y":2620,"wires":[]},{"id":"5741aedc.f64e5","type":"comment","z":"8d1f4239.bc1b7","name":"Beispiel tcpin funktioniert nicht","info":"","x":1450,"y":2680,"wires":[]},{"id":"b4d07491.9b7398","type":"http in","z":"8d1f4239.bc1b7","name":"","url":"/hello","method":"get","upload":false,"swaggerDoc":"","x":1370,"y":2720,"wires":[["6592e50c.a10a5c"]]},{"id":"6592e50c.a10a5c","type":"template","z":"8d1f4239.bc1b7","name":"page","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"<html>\n    <head></head>\n    <body>\n        <h1>Hello World!</h1>\n    </body>\n</html>","x":1540,"y":2720,"wires":[["ed404078.18327"]]},{"id":"ed404078.18327","type":"http response","z":"8d1f4239.bc1b7","name":"","x":1700,"y":2720,"wires":[]},{"id":"f0f3afac.de34f","type":"comment","z":"76cfa5d2.4bfa3c","name":"Flow Struktur","info":"Beispiele für eine bessere Struktur der Flows\n","x":1330,"y":540,"wires":[]},{"id":"52207b33.a91e4c","type":"inject","z":"9928af8e.21852","name":"Abfrage jede Stunde","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"3600","crontab":"","once":true,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":140,"y":100,"wires":[["8da0f528.8ccba"]]},{"id":"8da0f528.8ccba","type":"http request","z":"9928af8e.21852","name":"Bitcoin","method":"GET","ret":"obj","paytoqs":"ignore","url":"https://api.kraken.com/0/public/Ticker?pair=BTCEUR","tls":"","persist":false,"proxy":"","authType":"","x":340,"y":100,"wires":[["7f18c8a3.656d88"]]},{"id":"a3dd082a.1f3db","type":"debug","z":"9928af8e.21852","name":"Konsole","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":740,"y":100,"wires":[]},{"id":"e08970e0.148918","type":"comment","z":"9928af8e.21852","name":"Info zu JSON ","info":"JSON:\n      // Last ask price\n      ask: ticker.a[0],\n      // Last bid price\n      bid: ticker.b[0],\n      // Last trade closed\n      lastTrade: ticker.c[0],\n      // Volume traded in the last 24 houurs\n      volume: ticker.v[1],\n      // 24 hour low\n      low: ticker.l[1],\n      // 24 hour high\n      high: ticker.h[1],\n      // Open price\n      open: ticker.o","x":730,"y":340,"wires":[]},{"id":"7f18c8a3.656d88","type":"function","z":"9928af8e.21852","name":"JSON to BTC in Euro","func":"msg.payload = msg.payload.result.XXBTZEUR.a[0]\n\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":540,"y":100,"wires":[["a3dd082a.1f3db","a1b5f872.d82d08"]]},{"id":"551c03f4.c0a534","type":"comment","z":"9928af8e.21852","name":"(c) 2021 Thomas Wenzlaff   www.wenzlaff.info","info":"","x":630,"y":40,"wires":[]},{"id":"8066fd6d.b3d0c8","type":"comment","z":"9928af8e.21852","name":"Bitcoin Kurs Ticker","info":"","x":120,"y":40,"wires":[]},{"id":"a1b5f872.d82d08","type":"ui_gauge","z":"9928af8e.21852","g":"221f19a8.5d274e","name":"Anzeige","group":"62ad21f6.478228","order":0,"width":0,"height":0,"gtype":"gage","title":"Bitcoin Kurs in Euro","label":"Euro","format":"{{value}}","min":0,"max":"100000","colors":["#00b500","#e6e600","#ca3838"],"seg1":"","seg2":"","x":720,"y":220,"wires":[]},{"id":"f924800e.a804d","type":"ui_button","z":"9928af8e.21852","g":"221f19a8.5d274e","name":"","group":"62ad21f6.478228","order":3,"width":0,"height":0,"passthru":false,"label":"Update","tooltip":"","color":"","bgcolor":"","icon":"","payload":"","payloadType":"str","topic":"","x":140,"y":220,"wires":[["8da0f528.8ccba"]]},{"id":"622e582b.b2261","type":"comment","z":"9928af8e.21852","name":"www.wenzlaff.info","info":"","x":590,"y":420,"wires":[]},{"id":"8c6d68f.1965618","type":"inject","z":"9928af8e.21852","name":"Jede Stunde","repeat":"3600","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":100,"y":460,"wires":[["3198308f.b1d0b"]]},{"id":"3198308f.b1d0b","type":"http request","z":"9928af8e.21852","name":"Covid-19 abfragen für Deutschland","method":"GET","ret":"obj","paytoqs":false,"url":"https://covid19.mathdro.id/api/confirmed","tls":"","persist":false,"proxy":"","authType":"basic","x":240,"y":520,"wires":[["85336713.7e3e5"]]},{"id":"85336713.7e3e5","type":"function","z":"9928af8e.21852","name":"Covid-19 Deutschland Meldung","func":"var nachricht = \"Bestätigte Personen mit covid-19 in Deutschland: \"  + msg.payload[8].confirmed + \n\" Genesen: \" +  + msg.payload[8].recovered + \n\" Gestorben: \" +  + msg.payload[8].deaths +\n\"  -  #covid19 #coronavirus #corona #coronavirusdeutschland #covid #virus #deutschland\";\n\nmsg.payload = nachricht;\nmsg.topic = nachricht;\n\nreturn msg;\n","outputs":1,"noerr":0,"x":270,"y":580,"wires":[["a29a5d6.a71512"]]},{"id":"a29a5d6.a71512","type":"rbe","z":"9928af8e.21852","name":"Nur bei Änderung des Wert weiter","func":"rbe","gap":"","start":"","inout":"out","property":"payload","x":360,"y":640,"wires":[["edf4f959.998a88"]]},{"id":"edf4f959.998a88","type":"debug","z":"9928af8e.21852","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","x":650,"y":640,"wires":[]},{"id":"71ae5876.b57de8","type":"comment","z":"9928af8e.21852","name":"via Service von https://covid19.mathdro.id/api/confirmed","info":"","x":710,"y":520,"wires":[]},{"id":"8e007bf2.5451c8","type":"comment","z":"9928af8e.21852","name":"covid-19 Live-Ticker für Deutschland","info":"","x":140,"y":420,"wires":[]},{"id":"f80158f1.d27ab8","type":"inject","z":"8d1f4239.bc1b7","name":"CC:F9:E4:C2:1C:21 = Repeater","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":"","topic":"","payload":"{\"NewMACAddress\":\"CC:F9:E4:C2:1C:21\"}","payloadType":"json","x":150,"y":80,"wires":[["7b27936b.08bc8c"]]},{"id":"7b27936b.08bc8c","type":"fritzbox-in","z":"8d1f4239.bc1b7","device":"28b24ff3.2b8f1","name":"","service":"urn:dslforum-org:service:Hosts:1","action":"GetSpecificHostEntry","arguments":"{\"NewMACAddress\":\"value\"}","x":390,"y":80,"wires":[["12274598.0e46da"]]},{"id":"12274598.0e46da","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"console":"false","complete":"false","x":570,"y":80,"wires":[]},{"id":"55853c12.d75d54","type":"comment","z":"8d1f4239.bc1b7","name":"","info":"funktioniert\nPasswort ist fritzbospasswort , benutzername ist frei gewählt","x":90,"y":40,"wires":[]},{"id":"38d14011.43f0f","type":"fritzbox-callmonitor","z":"8d1f4239.bc1b7","d":true,"device":"28b24ff3.2b8f1","name":"","topic":"","x":180,"y":220,"wires":[["408c4f9a.5ab8d"]]},{"id":"408c4f9a.5ab8d","type":"fritzbox-contact","z":"8d1f4239.bc1b7","device":"28b24ff3.2b8f1","name":"","topic":"","phonebook":"0","ccode":"DE","x":450,"y":220,"wires":[["74bf141a.4f903c"]]},{"id":"74bf141a.4f903c","type":"debug","z":"8d1f4239.bc1b7","name":"","active":true,"console":"false","complete":"false","x":710,"y":220,"wires":[]},{"id":"f2f63ec4.bb8ea","type":"comment","z":"8d1f4239.bc1b7","name":"","info":"funktioniert (noch) nicht \nNote: Don't forget to enable the callmonitor service in your FritzBox. See above for instructions.","x":140,"y":180,"wires":[]},{"id":"8c3f54f4.1719e8","type":"comment","z":"8d1f4239.bc1b7","name":"alternativen","info":"alternative puppeteer\nStichwort headless browser\nnode-red-contrib-selenium-wd2","x":140,"y":420,"wires":[]},{"id":"f7a16808.f7d0a8","type":"comment","z":"8d1f4239.bc1b7","name":"weitere","info":"https://www.himpler.com/blog/fritzbox-node-red-und-homee/","x":440,"y":160,"wires":[]},{"id":"bd313f29.a100a","type":"inject","z":"9608aeef.c21ce","name":"Meldung eingeben","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"Hallo Welt","payloadType":"str","x":160,"y":80,"wires":[["d4c3da37.8a3d88"]]},{"id":"d4c3da37.8a3d88","type":"debug","z":"9608aeef.c21ce","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":370,"y":80,"wires":[]},{"id":"f09290e2.fe0aa","type":"inject","z":"76cfa5d2.4bfa3c","name":"Hallo Welt","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"Hallo Welt","payloadType":"str","x":120,"y":260,"wires":[["e2cdcaac.3ffa48"]],"outputLabels":["Meldung"]},{"id":"e2cdcaac.3ffa48","type":"link out","z":"76cfa5d2.4bfa3c","name":"zum debug-Node","links":["2088ebf2.30b244"],"x":255,"y":260,"wires":[]},{"id":"2088ebf2.30b244","type":"link in","z":"76cfa5d2.4bfa3c","name":"","links":["e2cdcaac.3ffa48","d9dce240.df004"],"x":55,"y":320,"wires":[["b0658a9b.1d7e48"]]},{"id":"b0658a9b.1d7e48","type":"debug","z":"76cfa5d2.4bfa3c","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":170,"y":320,"wires":[]},{"id":"200b9b72.7dc1b4","type":"comment","z":"76cfa5d2.4bfa3c","name":"Beispiel link-in / link-out","info":"","x":140,"y":200,"wires":[]},{"id":"1d67dd67.c032e3","type":"comment","z":"76cfa5d2.4bfa3c","name":"Beispiel Nodes in einer horizontalen Linie","info":"","x":200,"y":40,"wires":[]},{"id":"856692c3.4b45a","type":"inject","z":"76cfa5d2.4bfa3c","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":110,"y":100,"wires":[["2f5139b3.b45456"]]},{"id":"2f5139b3.b45456","type":"function","z":"76cfa5d2.4bfa3c","name":"","func":"\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":280,"y":100,"wires":[["37863394.c5b39c"]]},{"id":"11adab50.a406d5","type":"debug","z":"76cfa5d2.4bfa3c","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":710,"y":100,"wires":[]},{"id":"37863394.c5b39c","type":"change","z":"76cfa5d2.4bfa3c","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"payload","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":500,"y":100,"wires":[["11adab50.a406d5"]]},{"id":"8a865ce8.9cf3f","type":"comment","z":"76cfa5d2.4bfa3c","name":"Beispiel Subflow","info":"","x":120,"y":420,"wires":[]},{"id":"4a50640c.59a9dc","type":"inject","z":"76cfa5d2.4bfa3c","name":"Subflow","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"Subflow","payloadType":"str","x":110,"y":480,"wires":[["7d00d7ea.bc1aa8"]]},{"id":"8c5cb299.89775","type":"function","z":"5730a686.4f7288","name":"","func":"var dateNow = new Date();\nvar dateAsString = dateNow.toLocaleDateString();\nvar timeAsString = dateNow.toLocaleTimeString();\nmsg.payload = dateAsString + ' ' +  timeAsString + ' ' + msg.payload;\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":180,"y":40,"wires":[["28a4a38c.49baac","26de04f9.c16d8c","51a7a732.e41d28"]]},{"id":"58a1d93e.023738","type":"debug","z":"76cfa5d2.4bfa3c","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":530,"y":480,"wires":[]},{"id":"28a4a38c.49baac","type":"delay","z":"5730a686.4f7288","name":"","pauseType":"delay","timeout":"5","timeoutUnits":"seconds","rate":"1","nbRateUnits":"1","rateUnits":"second","randomFirst":"1","randomLast":"5","randomUnits":"seconds","drop":false,"x":360,"y":40,"wires":[[]]},{"id":"7d00d7ea.bc1aa8","type":"subflow:5730a686.4f7288","z":"76cfa5d2.4bfa3c","name":"","env":[],"x":310,"y":480,"wires":[["58a1d93e.023738"],[]]},{"id":"26de04f9.c16d8c","type":"switch","z":"5730a686.4f7288","name":"Endlosschleife prüfen","property":"payload","propertyType":"msg","rules":[{"t":"eq","v":"Endlosschleife","vt":"str"}],"checkall":"true","repair":false,"outputs":1,"x":380,"y":220,"wires":[["13cc069c.4bd659"]]},{"id":"13cc069c.4bd659","type":"link out","z":"5730a686.4f7288","name":"sub out","links":["bcf93234.45efa","7ea3e86b.3316f8"],"x":515,"y":220,"wires":[]},{"id":"bcf93234.45efa","type":"link in","z":"5730a686.4f7288","name":"sub in","links":["13cc069c.4bd659"],"x":75,"y":220,"wires":[["8c5cb299.89775"]]},{"id":"51a7a732.e41d28","type":"delay","z":"5730a686.4f7288","name":"","pauseType":"delay","timeout":"1","timeoutUnits":"hours","rate":"1","nbRateUnits":"1","rateUnits":"second","randomFirst":"1","randomLast":"5","randomUnits":"seconds","drop":false,"x":400,"y":160,"wires":[[]]},{"id":"d5f9488f.5d2ba8","type":"comment","z":"76cfa5d2.4bfa3c","name":"Beispiel Gruppen","info":"","x":120,"y":580,"wires":[]},{"id":"38e776aa.def4da","type":"inject","z":"76cfa5d2.4bfa3c","name":"Gruppe","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"Gruppe","payloadType":"str","x":110,"y":660,"wires":[["12b82ce4.4703b3"]]},{"id":"79b53329.dd41dc","type":"debug","z":"76cfa5d2.4bfa3c","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":710,"y":660,"wires":[]},{"id":"12b82ce4.4703b3","type":"function","z":"76cfa5d2.4bfa3c","g":"5e96112a.38e93","name":"","func":"var dateNow = new Date();\nvar dateAsString = dateNow.toLocaleDateString();\nvar timeAsString = dateNow.toLocaleTimeString();\nmsg.payload = dateAsString + ' ' +  timeAsString + ' ' + msg.payload;\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":280,"y":660,"wires":[["30d19c4d.55fb84","ce196b97.5201b8"]]},{"id":"30d19c4d.55fb84","type":"delay","z":"76cfa5d2.4bfa3c","g":"5e96112a.38e93","name":"","pauseType":"delay","timeout":"5","timeoutUnits":"seconds","rate":"1","nbRateUnits":"1","rateUnits":"second","randomFirst":"1","randomLast":"5","randomUnits":"seconds","drop":false,"x":480,"y":660,"wires":[["79b53329.dd41dc"]]},{"id":"ce196b97.5201b8","type":"delay","z":"76cfa5d2.4bfa3c","g":"5e96112a.38e93","name":"","pauseType":"delay","timeout":"10","timeoutUnits":"seconds","rate":"1","nbRateUnits":"1","rateUnits":"second","randomFirst":"1","randomLast":"5","randomUnits":"seconds","drop":false,"x":490,"y":700,"wires":[["79b53329.dd41dc"]]},{"id":"b87f31b0.196fc","type":"debug","z":"76cfa5d2.4bfa3c","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":510,"y":880,"wires":[]},{"id":"dbe3d29e.63cc1","type":"inject","z":"76cfa5d2.4bfa3c","name":"Hallo Welt","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"eine Nachricht","payload":"Hallo Welt","payloadType":"str","x":120,"y":880,"wires":[["b87f31b0.196fc"]],"outputLabels":["Meldung"]},{"id":"961a3c25.664a3","type":"comment","z":"76cfa5d2.4bfa3c","name":"Beispiel msg.topic","info":"","x":124,"y":837.5999755859375,"wires":[]}]
+[
+    {
+        "id": "76cfa5d2.4bfa3c",
+        "type": "tab",
+        "label": "02-flowsStrukturieren",
+        "disabled": false,
+        "info": "# Flows strukturieren\nFlows können schnell eine gewisse Komplexität und Unübersichtlichkeit erreichen. Dieser Flow soll verschiedene Möglichkeiten aufzeigen, Flows zu strukturieren und damit besser wartbar zu machen. Mittel sind:\n - Anzahl der Flows je Reiter\n - Anordnung der Nodes\n - der link-in- und der link-out-Node\n - Subflows\n - Gruppen\n\n# Messages gestalten\n - msg.topic nutzen\n\n# Dokumentation\nDokumentationsmöglichkeiten sind:\n - die Flow-Beschreibung (vgl. 1.1.3)\n - die jeweilige Node-Beschreibung (NODE-EIGENSCHAFTEN • BESCHREIBUNG)\n - der comment-Node\n\n# selstsprechende Namen\n"
+    },
+    {
+        "id": "9608aeef.c21ce",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ddcd8ff8.74d1a",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "eae6f870.124e68",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2ce6a838.6ea168",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b1b75497.a979a8",
+        "type": "tab",
+        "label": "History Browser",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "8d1f4239.bc1b7",
+        "type": "tab",
+        "label": "nochTesten",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "9928af8e.21852",
+        "type": "tab",
+        "label": "Crypto",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "52c29281.9046cc",
+        "type": "tab",
+        "label": "Flow 5",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "5730a686.4f7288",
+        "type": "subflow",
+        "name": "Bsp Subflow",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "8c5cb299.89775"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 520,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "28a4a38c.49baac",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 520,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "51a7a732.e41d28",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99",
+        "status": {
+            "x": 520,
+            "y": 100,
+            "wires": [
+                {
+                    "id": "28a4a38c.49baac",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "125619d1.c0fa4e",
+        "type": "group",
+        "z": "b1b75497.a979a8",
+        "name": "",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "e009e08a.487648",
+            "34b3eeda.b20502",
+            "956f27cf.e605a8",
+            "c6e89da7.c766e8",
+            "d94d7129.0b514"
+        ],
+        "x": 34,
+        "y": 539
+    },
+    {
+        "id": "4c1e7f93.0d14a8",
+        "type": "group",
+        "z": "b1b75497.a979a8",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "7a5c9ad4.dfa78c",
+            "e21faf7f.a00908",
+            "7c53b6d4.2ab54",
+            "eabf420f.1be678",
+            "7595a620.d7a3c8"
+        ],
+        "x": 34,
+        "y": 119
+    },
+    {
+        "id": "b3b06e0a.0b2088",
+        "type": "group",
+        "z": "b1b75497.a979a8",
+        "name": "",
+        "style": {
+            "label": true,
+            "color": "#000000",
+            "fill": "#ffbfbf"
+        },
+        "nodes": [
+            "60f0508c.618a58",
+            "506dd40c.705c4c",
+            "25242708.318c2",
+            "49fcd691.c0d9a",
+            "1a5bc125.122db7",
+            "866568c4.55361"
+        ],
+        "x": 34,
+        "y": 439
+    },
+    {
+        "id": "c054ed48.ca24e",
+        "type": "group",
+        "z": "b1b75497.a979a8",
+        "name": "",
+        "style": {
+            "fill": "#bfdbef",
+            "label": true
+        },
+        "nodes": [
+            "cd6a932d.015208",
+            "333f28f3.fc738",
+            "b24a5eef.1429c",
+            "adfa0d99.c7b57",
+            "17b507de.c7f3d8"
+        ],
+        "x": 494,
+        "y": 219
+    },
+    {
+        "id": "c151a9f4.a134a8",
+        "type": "group",
+        "z": "b1b75497.a979a8",
+        "name": "",
+        "style": {
+            "fill": "#ffffbf",
+            "label": true
+        },
+        "nodes": [
+            "acdcd1ef.c5d6d8",
+            "86ace8a1.dccee8",
+            "f10a0f15.7ab608",
+            "bc4f62d5.8fe8a8",
+            "845236bb.3006d",
+            "32282c2b.fd6f0c"
+        ],
+        "x": 34,
+        "y": 639
+    },
+    {
+        "id": "e7ab9317.044c3",
+        "type": "group",
+        "z": "b1b75497.a979a8",
+        "name": "",
+        "style": {
+            "fill": "#bfbfbf",
+            "label": true
+        },
+        "nodes": [
+            "bed6f55c.70e99",
+            "d70a6028.665f28",
+            "c5b21a26.849748",
+            "d8df9471.b5d4c8",
+            "182da13.eb7735f",
+            "e890e960.b88ad",
+            "6ca7019c.dfbc"
+        ],
+        "x": 494,
+        "y": 39
+    },
+    {
+        "id": "221f19a8.5d274e",
+        "type": "group",
+        "z": "9928af8e.21852",
+        "name": "Gui",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "f924800e.a804d",
+            "a1b5f872.d82d08"
+        ],
+        "x": 54,
+        "y": 179
+    },
+    {
+        "id": "5e96112a.38e93",
+        "type": "group",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "Echo-Gruppe",
+        "style": {
+            "stroke": "#001f60",
+            "fill": "#bfdbef",
+            "label": true
+        },
+        "nodes": [
+            "12b82ce4.4703b3",
+            "30d19c4d.55fb84",
+            "ce196b97.5201b8"
+        ],
+        "x": 194,
+        "y": 619,
+        "info": "# Beispiel einer Gruppe\n - weiterleiten und ergänzen einer Nachricht\n - 2-fach verzögerte Ausgabe\n"
+    },
+    {
+        "id": "2bbf4e2.8db68b2",
+        "type": "ui_tab",
+        "name": "CO2 History",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5345d7a1.deddd8",
+        "type": "ui_group",
+        "name": "History Browser",
+        "tab": "2bbf4e2.8db68b2",
+        "order": 1,
+        "disp": true,
+        "width": "18",
+        "collapse": false
+    },
+    {
+        "id": "dc6f0a4b.5fe898",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD.MM.YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "62ad21f6.478228",
+        "type": "ui_group",
+        "name": "Cryptowährung",
+        "tab": "9ed4e3c0.ac177",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "9ed4e3c0.ac177",
+        "type": "ui_tab",
+        "name": "Crypto",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "de27c776.734598",
+        "type": "websocket-client",
+        "path": "wss://echo.websocket.org ",
+        "tls": "",
+        "wholemsg": "false"
+    },
+    {
+        "id": "28b24ff3.2b8f1",
+        "type": "fritzbox-config",
+        "name": "",
+        "host": "192.168.178.1",
+        "port": "49000",
+        "ssl": false,
+        "user": "admin"
+    },
+    {
+        "id": "de2a4a70.8a65c8",
+        "type": "comment",
+        "z": "b1b75497.a979a8",
+        "name": "CO2 History File Browser",
+        "info": "1) Update the default folder in the Init node\n2) Update the default folder in the Reset node as well\n3) You can duplicate the Reset nodes and use them as saved shortcuts\n4) Check the Convert Timestamps function node if you want to see your dates in a different format. I just used the Javascript toISOString format.\n5) The Graph button can read any CSV file which have any number of values, but the first column always contains a timestamp column with javascript timestamp of the data point.",
+        "x": 150,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "373188f3.0b289",
+        "type": "inject",
+        "z": "b1b75497.a979a8",
+        "name": "Init",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "change",
+        "payload": "/data/co2data",
+        "payloadType": "str",
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "b78577b6.70c94"
+            ]
+        ]
+    },
+    {
+        "id": "d70a6028.665f28",
+        "type": "function",
+        "z": "b1b75497.a979a8",
+        "g": "e7ab9317.044c3",
+        "name": "Format data",
+        "func": "// format the data for the dropdown\nmsg.options = [];\nfor (var i=0; i<msg.payload.length; i++) {\n    // This is a file\n    obj = {};\n    obj [msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '')]=msg.payload[i].name;\n msg.options.push(obj);\n}\nmsg.payload={};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 750,
+        "y": 80,
+        "wires": [
+            [
+                "bed6f55c.70e99"
+            ]
+        ]
+    },
+    {
+        "id": "d8df9471.b5d4c8",
+        "type": "template",
+        "z": "b1b75497.a979a8",
+        "g": "e7ab9317.044c3",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<table width=\"100%\">\n    <tr><th>File Name</th><th>Size</th><th>Created</th><th>Changed</th></tr>\n {{#payload}}\n        <tr>\n            <td><a href=\"/download?filename={{name}}\" target=\"blank\">{{fname}}</a></td>\n <td>{{stat.size}}</td>\n            <td>{{stat.created}}</td>\n    <td>{{stat.changed}}</td>\n        </tr>\n {{/payload}}\n</table>\n",
+        "output": "str",
+        "x": 980,
+        "y": 140,
+        "wires": [
+            [
+                "c5b21a26.849748"
+            ]
+        ]
+    },
+    {
+        "id": "182da13.eb7735f",
+        "type": "function",
+        "z": "b1b75497.a979a8",
+        "g": "e7ab9317.044c3",
+        "name": "Convert timestamps",
+        "func": "for (var i=0; i<msg.payload.length; i++) {\n msg.payload[i].stat.created = msg.payload[i].stat.created.toISOString().slice(0, 19).replace('T', ' ');\n    msg.payload[i].stat.changed = msg.payload[i].stat.changed.toISOString().slice(0, 19).replace('T', ' ');\n    msg.payload[i].stat.accessed = msg.payload[i].stat.accessed.toISOString().slice(0, 19).replace('T', ' ');\n    msg.payload[i].stat.statusChanged = msg.payload[i].stat.statusChanged.toISOString().slice(0, 19).replace('T', ' ');\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 780,
+        "y": 140,
+        "wires": [
+            [
+                "d8df9471.b5d4c8"
+            ]
+        ]
+    },
+    {
+        "id": "506dd40c.705c4c",
+        "type": "function",
+        "z": "b1b75497.a979a8",
+        "g": "b3b06e0a.0b2088",
+        "name": "Get filename",
+        "func": "// Get the filename from the flow context\nlet filename = flow.get(\"fileselected\");\n\n// check, if the filename is undefined that means it does not exist yet, nothing is selected yet\n// return: do not output anything\nif (filename===undefined) {\n return;\n}\n\n// return the filename to the file-in node to delete\nmsg.filename = filename;\n\nif (msg.filename.replace(/^.*(\\\\|\\/|\\:)/, '')[0]!==\".\") {\n    // Only do this if this is a file, we don't delete folders\n    // and delete the context/selection as we are deleting the file as well\n flow.set(\"fileselected\");\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 480,
+        "wires": [
+            [
+                "25242708.318c2"
+            ]
+        ]
+    },
+    {
+        "id": "25242708.318c2",
+        "type": "file",
+        "z": "b1b75497.a979a8",
+        "g": "b3b06e0a.0b2088",
+        "name": "Delete file",
+        "filename": "",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "delete",
+        "encoding": "none",
+        "x": 960,
+        "y": 480,
+        "wires": [
+            [
+                "6ca7019c.dfbc",
+                "17b507de.c7f3d8"
+            ]
+        ]
+    },
+    {
+        "id": "e009e08a.487648",
+        "type": "http in",
+        "z": "b1b75497.a979a8",
+        "g": "125619d1.c0fa4e",
+        "name": "",
+        "url": "/download",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 580,
+        "wires": [
+            [
+                "956f27cf.e605a8"
+            ]
+        ]
+    },
+    {
+        "id": "34b3eeda.b20502",
+        "type": "http response",
+        "z": "b1b75497.a979a8",
+        "g": "125619d1.c0fa4e",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 970,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "956f27cf.e605a8",
+        "type": "function",
+        "z": "b1b75497.a979a8",
+        "g": "125619d1.c0fa4e",
+        "name": "Get the file name",
+        "func": "msg.filename = msg.req.query.filename;\nmsg.contentdisposition = \"attachment; filename=\\\"\" + msg.req.query.filename.replace(/^.*(\\\\|\\/|\\:)/, '') + \"\\\"\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 370,
+        "y": 580,
+        "wires": [
+            [
+                "c6e89da7.c766e8"
+            ]
+        ],
+        "outputLabels": [
+            "Folder selected"
+        ]
+    },
+    {
+        "id": "c6e89da7.c766e8",
+        "type": "file in",
+        "z": "b1b75497.a979a8",
+        "g": "125619d1.c0fa4e",
+        "name": "",
+        "filename": "",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 580,
+        "wires": [
+            [
+                "d94d7129.0b514"
+            ]
+        ]
+    },
+    {
+        "id": "d94d7129.0b514",
+        "type": "change",
+        "z": "b1b75497.a979a8",
+        "g": "125619d1.c0fa4e",
+        "name": "Set Headers",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "headers.content-type",
+                "pt": "msg",
+                "to": "text/csv",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "headers.Content-Disposition",
+                "pt": "msg",
+                "to": "contentdisposition",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 580,
+        "wires": [
+            [
+                "34b3eeda.b20502"
+            ]
+        ]
+    },
+    {
+        "id": "86ace8a1.dccee8",
+        "type": "function",
+        "z": "b1b75497.a979a8",
+        "g": "c151a9f4.a134a8",
+        "name": "Get filename",
+        "func": "// Get the filename from the flow context\nlet filename = flow.get(\"fileselected\");\n\n// check, if the filename is undefined that means it does not exist yet, nothing is selected yet\n// return: do not output anything\nif (filename===undefined) {\n return;\n}\n\n// return the filename to the file-in node to delete\nmsg.filename = filename;\n\nif (msg.filename.replace(/^.*(\\\\|\\/|\\:)/, '')[0]!==\".\") {\n    // Only do this if this is a file, we don't delete folders\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 280,
+        "y": 680,
+        "wires": [
+            [
+                "f10a0f15.7ab608"
+            ]
+        ]
+    },
+    {
+        "id": "f10a0f15.7ab608",
+        "type": "file in",
+        "z": "b1b75497.a979a8",
+        "g": "c151a9f4.a134a8",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 450,
+        "y": 680,
+        "wires": [
+            [
+                "bc4f62d5.8fe8a8"
+            ]
+        ]
+    },
+    {
+        "id": "bc4f62d5.8fe8a8",
+        "type": "csv",
+        "z": "b1b75497.a979a8",
+        "g": "c151a9f4.a134a8",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 590,
+        "y": 680,
+        "wires": [
+            [
+                "845236bb.3006d"
+            ]
+        ]
+    },
+    {
+        "id": "845236bb.3006d",
+        "type": "function",
+        "z": "b1b75497.a979a8",
+        "g": "c151a9f4.a134a8",
+        "name": "Format data for chart",
+        "func": "var chart = [{\n    \"series\":[],\n \"data\":[],\n    \"labels\":[msg.filename]\n}];\n\n\n/*\nvar pressure = [];\nvar out2 = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n pressure.push({\"x\":msg.payload[i].timestamp, \"y\":msg.payload[i].pressure});\n out2.push({\"x\":msg.payload[i].timestamp, \"y\":msg.payload[i].out2*200});\n\n}\nchart[0].data.push(pressure);\nchart[0].data.push(out2);\n*/\n\nlet columns = 0;\n\nfor(var series in msg.payload[0]) {\n if(series!==\"timestamp\") {\n        chart[0].series.push(series);\n      chart[0].data.push([]);\n      columns++;\n    }\n}\n\n\nfor (var j=0; j<msg.payload.length; j++) {\n   for(var i=0;i<columns;i++) {\n       chart[0].data[i].push({\"x\":msg.payload[j].timestamp, \"y\":msg.payload[j][chart[0].series[i]]});\n   } \n}\n\n\n\n\nmsg.payload = chart;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 780,
+        "y": 680,
+        "wires": [
+            [
+                "32282c2b.fd6f0c"
+            ]
+        ]
+    },
+    {
+        "id": "1a5bc125.122db7",
+        "type": "change",
+        "z": "b1b75497.a979a8",
+        "g": "b3b06e0a.0b2088",
+        "name": "Set message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Delete confirmation",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Bist Du sicher das die Datei gelöscht werden soll?",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 480,
+        "wires": [
+            [
+                "49fcd691.c0d9a"
+            ]
+        ]
+    },
+    {
+        "id": "866568c4.55361",
+        "type": "switch",
+        "z": "b1b75497.a979a8",
+        "g": "b3b06e0a.0b2088",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Yes",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 630,
+        "y": 480,
+        "wires": [
+            [
+                "506dd40c.705c4c"
+            ]
+        ]
+    },
+    {
+        "id": "b78577b6.70c94",
+        "type": "function",
+        "z": "b1b75497.a979a8",
+        "name": "Folder handling",
+        "func": "let folder = context.get(\"folder\");\nif (folder===undefined) {\n    folder=\"/\";\n    context.set(\"folder\", folder);\n}\n\nlet hidden = context.get(\"hidden\");\nif (hidden===undefined) {\n    hidden=false;\n    context.set(\"hidden\", hidden);\n}\n\nif (msg.topic===\"up\") {\n    var the_arr = folder.split('/');\n    the_arr.pop();\n    folder=the_arr.join('/'); \n    context.set(\"folder\", folder);\n}\nif (msg.topic===\"change\") {\n    folder=msg.payload;    \n    context.set(\"folder\", folder);\n}\nif (msg.topic===\"hidden\") {\n    hidden=msg.payload;    \n context.set(\"hidden\", hidden);\n}\n\nmsg.payload = {\"start\":folder, \"hidden\": hidden};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 340,
+        "y": 260,
+        "wires": [
+            [
+                "6ca7019c.dfbc",
+                "cd6a932d.015208",
+                "17b507de.c7f3d8"
+            ]
+        ]
+    },
+    {
+        "id": "db641113.d9fb1",
+        "type": "function",
+        "z": "b1b75497.a979a8",
+        "name": "Change folder",
+        "func": "// Get the filename from the flow context\nlet folderselected = flow.get(\"folderselected\");\n\n// check, if the filename is undefined that means it does not exist yet, nothing is selected yet\n// return: do not output anything\nif (folderselected===undefined) {\n    return;\n}\n\nmsg.topic = \"change\";\nmsg.payload = folderselected;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 340,
+        "y": 320,
+        "wires": [
+            [
+                "b78577b6.70c94"
+            ]
+        ]
+    },
+    {
+        "id": "b24a5eef.1429c",
+        "type": "function",
+        "z": "b1b75497.a979a8",
+        "g": "c054ed48.ca24e",
+        "name": "Format data",
+        "func": "// format the data for the dropdown\nmsg.options = [];\nfor (var i=0; i<msg.payload.length; i++) {\n    // This is a foler\n    obj = {};\n    obj [\"[\"+msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '')+\"]\"]=msg.payload[i].name;\n msg.options.push(obj);\n}\nmsg.payload={};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 750,
+        "y": 320,
+        "wires": [
+            [
+                "333f28f3.fc738"
+            ]
+        ]
+    },
+    {
+        "id": "e890e960.b88ad",
+        "type": "change",
+        "z": "b1b75497.a979a8",
+        "g": "e7ab9317.044c3",
+        "name": "Save selection",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fileselected",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "adfa0d99.c7b57",
+        "type": "change",
+        "z": "b1b75497.a979a8",
+        "g": "c054ed48.ca24e",
+        "name": "Save selection",
+        "rules": [
+            {
+                "t": "set",
+                "p": "folderselected",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed5d9d89.b59408",
+        "type": "comment",
+        "z": "b1b75497.a979a8",
+        "name": "Install: node-red-contrib-fs",
+        "info": "",
+        "x": 570,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "83fefc4d.7fe8c8",
+        "type": "comment",
+        "z": "b1b75497.a979a8",
+        "name": "(c) 2020 - 2021 Thomas Wenzlaff www.wenzlaff.info",
+        "info": "",
+        "x": 230,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "291a6bb0.227b1c",
+        "type": "comment",
+        "z": "b1b75497.a979a8",
+        "name": "Pfad anpassen in: Init + Reset + Files + Folder",
+        "info": "",
+        "x": 870,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "7a5c9ad4.dfa78c",
+        "type": "ui_button",
+        "z": "b1b75497.a979a8",
+        "g": "4c1e7f93.0d14a8",
+        "name": "",
+        "group": "5345d7a1.deddd8",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Refresh",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "refresh",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "refresh",
+        "topicType": "str",
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "b78577b6.70c94"
+            ]
+        ]
+    },
+    {
+        "id": "60f0508c.618a58",
+        "type": "ui_button",
+        "z": "b1b75497.a979a8",
+        "g": "b3b06e0a.0b2088",
+        "name": "",
+        "group": "5345d7a1.deddd8",
+        "order": 10,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Delete",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "delete",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "1a5bc125.122db7"
+            ]
+        ]
+    },
+    {
+        "id": "acdcd1ef.c5d6d8",
+        "type": "ui_button",
+        "z": "b1b75497.a979a8",
+        "g": "c151a9f4.a134a8",
+        "name": "",
+        "group": "5345d7a1.deddd8",
+        "order": 11,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Graph",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "show_chart",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 110,
+        "y": 680,
+        "wires": [
+            [
+                "86ace8a1.dccee8"
+            ]
+        ]
+    },
+    {
+        "id": "e21faf7f.a00908",
+        "type": "ui_button",
+        "z": "b1b75497.a979a8",
+        "g": "4c1e7f93.0d14a8",
+        "name": "",
+        "group": "5345d7a1.deddd8",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Up",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "arrow_upwards",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "up",
+        "topicType": "str",
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "b78577b6.70c94"
+            ]
+        ]
+    },
+    {
+        "id": "7c53b6d4.2ab54",
+        "type": "ui_button",
+        "z": "b1b75497.a979a8",
+        "g": "4c1e7f93.0d14a8",
+        "name": "",
+        "group": "5345d7a1.deddd8",
+        "order": 8,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Open",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "folder_open",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "db641113.d9fb1"
+            ]
+        ]
+    },
+    {
+        "id": "eabf420f.1be678",
+        "type": "ui_button",
+        "z": "b1b75497.a979a8",
+        "g": "4c1e7f93.0d14a8",
+        "name": "",
+        "group": "5345d7a1.deddd8",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "autorenew",
+        "payload": "/data/co2data",
+        "payloadType": "str",
+        "topic": "change",
+        "topicType": "str",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "b78577b6.70c94"
+            ]
+        ]
+    },
+    {
+        "id": "bed6f55c.70e99",
+        "type": "ui_dropdown",
+        "z": "b1b75497.a979a8",
+        "g": "e7ab9317.044c3",
+        "name": "File Selector",
+        "label": "",
+        "tooltip": "",
+        "place": "Select a file",
+        "group": "5345d7a1.deddd8",
+        "order": 9,
+        "width": "5",
+        "height": "1",
+        "passthru": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "x": 950,
+        "y": 80,
+        "wires": [
+            [
+                "e890e960.b88ad"
+            ]
+        ]
+    },
+    {
+        "id": "333f28f3.fc738",
+        "type": "ui_dropdown",
+        "z": "b1b75497.a979a8",
+        "g": "c054ed48.ca24e",
+        "name": "Folder Selector",
+        "label": "",
+        "tooltip": "",
+        "place": "Select a folder",
+        "group": "5345d7a1.deddd8",
+        "order": 7,
+        "width": "5",
+        "height": "1",
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "topicType": "str",
+        "x": 940,
+        "y": 320,
+        "wires": [
+            [
+                "adfa0d99.c7b57"
+            ]
+        ]
+    },
+    {
+        "id": "7595a620.d7a3c8",
+        "type": "ui_switch",
+        "z": "b1b75497.a979a8",
+        "d": true,
+        "g": "4c1e7f93.0d14a8",
+        "name": "",
+        "label": "Hidden",
+        "tooltip": "Show hidden files or not",
+        "group": "5345d7a1.deddd8",
+        "order": 5,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": "false",
+        "topic": "hidden",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "check_box",
+        "oncolor": "#000000",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "check_box_outline_blank",
+        "offcolor": "#000000",
+        "animate": true,
+        "x": 120,
+        "y": 280,
+        "wires": [
+            [
+                "b78577b6.70c94"
+            ]
+        ]
+    },
+    {
+        "id": "cd6a932d.015208",
+        "type": "ui_text",
+        "z": "b1b75497.a979a8",
+        "g": "c054ed48.ca24e",
+        "group": "5345d7a1.deddd8",
+        "order": 4,
+        "width": "9",
+        "height": "1",
+        "name": "",
+        "label": "Folder:",
+        "format": "{{msg.payload.start}}",
+        "layout": "row-left",
+        "x": 580,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "32282c2b.fd6f0c",
+        "type": "ui_chart",
+        "z": "b1b75497.a979a8",
+        "g": "c151a9f4.a134a8",
+        "name": "",
+        "group": "5345d7a1.deddd8",
+        "order": 12,
+        "width": "18",
+        "height": "6",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 970,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49fcd691.c0d9a",
+        "type": "ui_toast",
+        "z": "b1b75497.a979a8",
+        "g": "b3b06e0a.0b2088",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Yes",
+        "cancel": "No",
+        "raw": false,
+        "topic": "",
+        "name": "Confirmation",
+        "x": 470,
+        "y": 480,
+        "wires": [
+            [
+                "866568c4.55361"
+            ]
+        ]
+    },
+    {
+        "id": "c5b21a26.849748",
+        "type": "ui_template",
+        "z": "b1b75497.a979a8",
+        "g": "e7ab9317.044c3",
+        "group": "5345d7a1.deddd8",
+        "name": "",
+        "order": 6,
+        "width": "18",
+        "height": "6",
+        "format": "<div ng-bind-html=\"msg.payload\" height=\"400\" style=\"height: 400px;\"><br/>\n</div>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 1120,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ca7019c.dfbc",
+        "type": "fs-file-lister",
+        "z": "b1b75497.a979a8",
+        "g": "e7ab9317.044c3",
+        "name": "Files",
+        "start": "/data/co2data",
+        "pattern": "*.*",
+        "folders": "*",
+        "hidden": false,
+        "lstype": "files",
+        "path": true,
+        "single": true,
+        "depth": 0,
+        "stat": true,
+        "showWarnings": false,
+        "x": 570,
+        "y": 80,
+        "wires": [
+            [
+                "d70a6028.665f28",
+                "182da13.eb7735f"
+            ]
+        ]
+    },
+    {
+        "id": "17b507de.c7f3d8",
+        "type": "fs-file-lister",
+        "z": "b1b75497.a979a8",
+        "g": "c054ed48.ca24e",
+        "name": "Folders",
+        "start": "/data/co2data",
+        "pattern": "*.*",
+        "folders": "*",
+        "hidden": false,
+        "lstype": "directories",
+        "path": true,
+        "single": true,
+        "depth": 0,
+        "stat": true,
+        "showWarnings": false,
+        "x": 580,
+        "y": 320,
+        "wires": [
+            [
+                "b24a5eef.1429c"
+            ]
+        ]
+    },
+    {
+        "id": "1f6f62c1.bb2a8d",
+        "type": "inject",
+        "z": "8d1f4239.bc1b7",
+        "name": "http://domain.tld/wp-admin/",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "http://iotgrizzly.de/wp-admin/",
+        "payloadType": "str",
+        "x": 290,
+        "y": 460,
+        "wires": [
+            [
+                "e11685bd.764ba8"
+            ]
+        ]
+    },
+    {
+        "id": "e11685bd.764ba8",
+        "type": "credentials",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "props": [
+            {
+                "value": "username",
+                "type": "msg"
+            },
+            {
+                "value": "password",
+                "type": "msg"
+            }
+        ],
+        "x": 290,
+        "y": 540,
+        "wires": [
+            [
+                "42d713c9.71742c",
+                "461053fe.43b40c"
+            ]
+        ]
+    },
+    {
+        "id": "497f2b6e.c3e6f4",
+        "type": "html",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "property": "",
+        "outproperty": "",
+        "tag": ".update-count",
+        "ret": "html",
+        "as": "single",
+        "x": 470,
+        "y": 680,
+        "wires": [
+            [
+                "7b9f05e0.6869ac"
+            ]
+        ]
+    },
+    {
+        "id": "dd1260eb.1a21d",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "7b9f05e0.6869ac",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "42d713c9.71742c",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "d7a921dd.eaadd",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "keine Antwort nbrowser",
+        "info": "",
+        "x": 520,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "5e8db598.890c5c",
+        "type": "nbrowser",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "methods": [
+            {
+                "name": "gotoURL",
+                "func": "goto",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "https://mypoweraccount.saskpower.com/MyAccount/Login",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "wait",
+                "func": "wait",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "20",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "type",
+                "func": "type",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#signInName",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "msg",
+                        "value": "emailaddress",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "type",
+                "func": "type",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#password",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "msg",
+                        "value": "password",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "click",
+                "func": "click",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#next",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "getText",
+                "func": "getText",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#VTX_AccountOverview > div:nth-child(3) > div > div.col-sm-5 > div:nth-child(1) > div.panel-body.noform > table > tbody > tr:nth-child(4) > td.total.right",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "output",
+                        "value": 1,
+                        "typeDefault": "output"
+                    }
+                ]
+            },
+            {
+                "name": "getText",
+                "func": "getText",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#VTX_AccountOverview > div:nth-child(3) > div > div.col-sm-5 > div:nth-child(1) > div.panel-body.noform > div.payment_message",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "output",
+                        "value": 2,
+                        "typeDefault": "output"
+                    }
+                ]
+            }
+        ],
+        "prop": "nbrowser",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "close": true,
+        "show": true,
+        "ssl": true,
+        "outputs": 2,
+        "x": 1100,
+        "y": 460,
+        "wires": [
+            [
+                "88901fe5.a36e9"
+            ],
+            [
+                "88901fe5.a36e9"
+            ]
+        ]
+    },
+    {
+        "id": "7147b3f1.557ebc",
+        "type": "credentials",
+        "z": "8d1f4239.bc1b7",
+        "name": "SaskPower Credentials",
+        "props": [
+            {
+                "value": "emailaddress",
+                "type": "msg"
+            },
+            {
+                "value": "password",
+                "type": "msg"
+            }
+        ],
+        "x": 870,
+        "y": 460,
+        "wires": [
+            [
+                "5e8db598.890c5c",
+                "eb3f6ad1.ef75f8",
+                "64e37a0f.339a24",
+                "81c1d61c.b94088"
+            ]
+        ]
+    },
+    {
+        "id": "b426e4a.05bd318",
+        "type": "inject",
+        "z": "8d1f4239.bc1b7",
+        "name": "Get SaskPower Bill",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "https://mypoweraccount.saskpower.com/MyAccount/Login",
+        "payloadType": "str",
+        "x": 610,
+        "y": 460,
+        "wires": [
+            [
+                "7147b3f1.557ebc"
+            ]
+        ]
+    },
+    {
+        "id": "88901fe5.a36e9",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "eb3f6ad1.ef75f8",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "URL",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "64e37a0f.339a24",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "emailaddress",
+        "targetType": "msg",
+        "x": 1090,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "81c1d61c.b94088",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "password",
+        "targetType": "msg",
+        "x": 1080,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "5303336c.f0d85c",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "lt. Forum auch problematisch",
+        "info": "",
+        "x": 1090,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "24f1c7ed.41a608",
+        "type": "inject",
+        "z": "8d1f4239.bc1b7",
+        "name": "https://iotgrizzly.de",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "https://iotgrizzly.de",
+        "payloadType": "str",
+        "x": 250,
+        "y": 800,
+        "wires": [
+            [
+                "4a8f2187.e24fd",
+                "b43d6831.d70a18"
+            ]
+        ]
+    },
+    {
+        "id": "ade8cdb4.861cb",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "4a8f2187.e24fd",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "URL",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "a6c0b283.a7997",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "emailaddress",
+        "targetType": "msg",
+        "x": 730,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "31a273bc.a98aec",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "password",
+        "targetType": "msg",
+        "x": 720,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "89769e3c.9eb2d",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "lt. Forum auch problematisch",
+        "info": "",
+        "x": 730,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "461053fe.43b40c",
+        "type": "nbrowser",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "methods": [
+            {
+                "name": "gotoURL",
+                "func": "goto",
+                "params": [
+                    {
+                        "type": "msg",
+                        "value": "payload",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "type",
+                "func": "type",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#user_login",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "msg",
+                        "value": "username",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "type",
+                "func": "type",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#user_pass",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "msg",
+                        "value": "password",
+                        "typeDefault": "str"
+                    }
+                ]
+            }
+        ],
+        "prop": "nbrowser",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "close": false,
+        "show": true,
+        "ssl": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 620,
+        "wires": [
+            [
+                "497f2b6e.c3e6f4"
+            ]
+        ]
+    },
+    {
+        "id": "eae8ce4b.31df8",
+        "type": "nbrowser",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "methods": [
+            {
+                "name": "gotoURL",
+                "func": "goto",
+                "params": [
+                    {
+                        "type": "msg",
+                        "value": "payload",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "type",
+                "func": "type",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#user_login",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "msg",
+                        "value": "username",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "type",
+                "func": "type",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#user_pass",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "msg",
+                        "value": "password",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "click",
+                "func": "click",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#wp-submit",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "wait",
+                "func": "wait",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#welcome-panel",
+                        "typeDefault": "str"
+                    }
+                ]
+            }
+        ],
+        "prop": "nbrowser",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "close": false,
+        "show": true,
+        "ssl": false,
+        "outputs": 1,
+        "x": 138,
+        "y": 652.6666870117188,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b43d6831.d70a18",
+        "type": "nbrowser",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "methods": [
+            {
+                "name": "gotoURL",
+                "func": "goto",
+                "params": [
+                    {
+                        "type": "msg",
+                        "value": "payload",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "wait",
+                "func": "wait",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "2",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "click",
+                "func": "click",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#esp32",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "getHeaders",
+                "func": "getHeaders",
+                "params": [
+                    {
+                        "type": "output",
+                        "value": 1,
+                        "typeDefault": "output"
+                    }
+                ]
+            },
+            {
+                "name": "getText",
+                "func": "getText",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#VTX_AccountOverview > div:nth-child(3) > div > div.col-sm-5 > div:nth-child(1) > div.panel-body.noform > div.payment_message",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "output",
+                        "value": 2,
+                        "typeDefault": "output"
+                    }
+                ]
+            }
+        ],
+        "prop": "nbrowser",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "close": true,
+        "show": true,
+        "ssl": true,
+        "outputs": 2,
+        "x": 500,
+        "y": 800,
+        "wires": [
+            [
+                "ade8cdb4.861cb"
+            ],
+            [
+                "ade8cdb4.861cb"
+            ]
+        ]
+    },
+    {
+        "id": "2146e559.01ab5a",
+        "type": "inject",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1360,
+        "y": 780,
+        "wires": [
+            [
+                "67ee989.1b64968"
+            ]
+        ]
+    },
+    {
+        "id": "67ee989.1b64968",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1560,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "d98219fd.9a8b48",
+        "type": "inject",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1330,
+        "y": 900,
+        "wires": [
+            [
+                "f368f344.3ba42"
+            ]
+        ]
+    },
+    {
+        "id": "88fd44ae.7ab8d8",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1800,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "f368f344.3ba42",
+        "type": "openweathermap",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "wtype": "current",
+        "lon": "",
+        "lat": "",
+        "city": "Berlin",
+        "country": "Germany",
+        "language": "de",
+        "x": 1510,
+        "y": 900,
+        "wires": [
+            [
+                "88fd44ae.7ab8d8"
+            ]
+        ]
+    },
+    {
+        "id": "b6d8ee2.e49c61",
+        "type": "inject",
+        "z": "8d1f4239.bc1b7",
+        "name": "http://domain.tld/wp-admin/",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "http://iotgrizzly.de/wp-admin/",
+        "payloadType": "str",
+        "x": 1440,
+        "y": 1040,
+        "wires": [
+            [
+                "4fc19b70.3973f4"
+            ]
+        ]
+    },
+    {
+        "id": "4fc19b70.3973f4",
+        "type": "credentials",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "props": [
+            {
+                "value": "username",
+                "type": "msg"
+            },
+            {
+                "value": "password",
+                "type": "msg"
+            }
+        ],
+        "x": 1440,
+        "y": 1120,
+        "wires": [
+            [
+                "7ccdc9fa.8c61a8",
+                "d6febfa0.43668"
+            ]
+        ]
+    },
+    {
+        "id": "7e2d2875.841248",
+        "type": "html",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "property": "",
+        "outproperty": "",
+        "tag": ".update-count",
+        "ret": "html",
+        "as": "single",
+        "x": 1620,
+        "y": 1260,
+        "wires": [
+            [
+                "1e26ea00.aa6536"
+            ]
+        ]
+    },
+    {
+        "id": "9feff75c.66c958",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1820,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "1e26ea00.aa6536",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1820,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "7ccdc9fa.8c61a8",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1820,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "70faa224.b26bec",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "keine Antwort nbrowser",
+        "info": "",
+        "x": 1670,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "8e39ab04.8f5408",
+        "type": "secret",
+        "z": "8d1f4239.bc1b7",
+        "name": "IFTTT API Key",
+        "x": 1470,
+        "y": 1880,
+        "wires": [
+            [
+                "f5822e16.8d2eb",
+                "863787a4.5987a8"
+            ]
+        ]
+    },
+    {
+        "id": "f5822e16.8d2eb",
+        "type": "template",
+        "z": "8d1f4239.bc1b7",
+        "name": "Set msg.url",
+        "field": "url",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "https://maker.ifttt.com/trigger/doorbell/with/key/{{secret}}",
+        "x": 1580,
+        "y": 1940,
+        "wires": [
+            [
+                "49d28c9f.972b54",
+                "f320df11.43aee"
+            ]
+        ]
+    },
+    {
+        "id": "f320df11.43aee",
+        "type": "http request",
+        "z": "8d1f4239.bc1b7",
+        "name": "IFTTT",
+        "method": "GET",
+        "ret": "txt",
+        "url": "",
+        "x": 1740,
+        "y": 1960,
+        "wires": [
+            [
+                "36bcdf5d.cd1a3"
+            ]
+        ]
+    },
+    {
+        "id": "49d28c9f.972b54",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 1740,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "1e0aff4a.d3d851",
+        "type": "inject",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1350,
+        "y": 1820,
+        "wires": [
+            [
+                "8e39ab04.8f5408"
+            ]
+        ]
+    },
+    {
+        "id": "863787a4.5987a8",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 1725.0130004882812,
+        "y": 1875.0364990234375,
+        "wires": []
+    },
+    {
+        "id": "36bcdf5d.cd1a3",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 1880,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "cbef02f6.fc158",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "IFTTT API-Key fehlt noch, noch nicht übertragen",
+        "info": "",
+        "x": 1630,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "b27e269e.a88d28",
+        "type": "nbrowser",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "methods": [
+            {
+                "name": "gotoURL",
+                "func": "goto",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "https://mypoweraccount.saskpower.com/MyAccount/Login",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "wait",
+                "func": "wait",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "20",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "type",
+                "func": "type",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#signInName",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "msg",
+                        "value": "emailaddress",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "type",
+                "func": "type",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#password",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "msg",
+                        "value": "password",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "click",
+                "func": "click",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#next",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "getText",
+                "func": "getText",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#VTX_AccountOverview > div:nth-child(3) > div > div.col-sm-5 > div:nth-child(1) > div.panel-body.noform > table > tbody > tr:nth-child(4) > td.total.right",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "output",
+                        "value": 1,
+                        "typeDefault": "output"
+                    }
+                ]
+            },
+            {
+                "name": "getText",
+                "func": "getText",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#VTX_AccountOverview > div:nth-child(3) > div > div.col-sm-5 > div:nth-child(1) > div.panel-body.noform > div.payment_message",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "output",
+                        "value": 2,
+                        "typeDefault": "output"
+                    }
+                ]
+            }
+        ],
+        "prop": "nbrowser",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "close": true,
+        "show": true,
+        "ssl": true,
+        "outputs": 2,
+        "x": 2250,
+        "y": 1040,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "316c3892.c8d3f8",
+        "type": "credentials",
+        "z": "8d1f4239.bc1b7",
+        "name": "SaskPower Credentials",
+        "props": [
+            {
+                "value": "emailaddress",
+                "type": "msg"
+            },
+            {
+                "value": "password",
+                "type": "msg"
+            }
+        ],
+        "x": 2020,
+        "y": 1040,
+        "wires": [
+            [
+                "b27e269e.a88d28",
+                "7eee7607.ebf0e8",
+                "b2aaeb01.348ce8",
+                "fdf2d063.6e64"
+            ]
+        ]
+    },
+    {
+        "id": "4c371f9e.fe49",
+        "type": "inject",
+        "z": "8d1f4239.bc1b7",
+        "name": "Get SaskPower Bill",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "https://mypoweraccount.saskpower.com/MyAccount/Login",
+        "payloadType": "str",
+        "x": 1760,
+        "y": 1040,
+        "wires": [
+            [
+                "316c3892.c8d3f8"
+            ]
+        ]
+    },
+    {
+        "id": "7eee7607.ebf0e8",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "URL",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2200,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "b2aaeb01.348ce8",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "emailaddress",
+        "targetType": "msg",
+        "x": 2240,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "fdf2d063.6e64",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "password",
+        "targetType": "msg",
+        "x": 2230,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "6e5e8a42.9eced4",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "lt. Forum auch problematisch",
+        "info": "",
+        "x": 2240,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "b2778444.04b7c8",
+        "type": "inject",
+        "z": "8d1f4239.bc1b7",
+        "name": "https://iotgrizzly.de",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "https://iotgrizzly.de",
+        "payloadType": "str",
+        "x": 1400,
+        "y": 1380,
+        "wires": [
+            [
+                "44dd8d9d.5f4924",
+                "fa6e14c0.d1f538"
+            ]
+        ]
+    },
+    {
+        "id": "38f85fca.69878",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1940,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "44dd8d9d.5f4924",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "URL",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1680,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "1d4e4fc.e03c6b",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "emailaddress",
+        "targetType": "msg",
+        "x": 1880,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "7091746b.bfed9c",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "password",
+        "targetType": "msg",
+        "x": 1870,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "7662fa0e.d84144",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "lt. Forum auch problematisch",
+        "info": "",
+        "x": 1880,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "d6febfa0.43668",
+        "type": "nbrowser",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "methods": [
+            {
+                "name": "gotoURL",
+                "func": "goto",
+                "params": [
+                    {
+                        "type": "msg",
+                        "value": "payload",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "type",
+                "func": "type",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#user_login",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "msg",
+                        "value": "username",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "type",
+                "func": "type",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#user_pass",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "msg",
+                        "value": "password",
+                        "typeDefault": "str"
+                    }
+                ]
+            }
+        ],
+        "prop": "nbrowser",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "close": false,
+        "show": true,
+        "ssl": false,
+        "outputs": 1,
+        "x": 1470,
+        "y": 1200,
+        "wires": [
+            [
+                "7e2d2875.841248"
+            ]
+        ]
+    },
+    {
+        "id": "4cf6d7d9.888d38",
+        "type": "nbrowser",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "methods": [
+            {
+                "name": "gotoURL",
+                "func": "goto",
+                "params": [
+                    {
+                        "type": "msg",
+                        "value": "payload",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "type",
+                "func": "type",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#user_login",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "msg",
+                        "value": "username",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "type",
+                "func": "type",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#user_pass",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "msg",
+                        "value": "password",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "click",
+                "func": "click",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#wp-submit",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "wait",
+                "func": "wait",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#welcome-panel",
+                        "typeDefault": "str"
+                    }
+                ]
+            }
+        ],
+        "prop": "nbrowser",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "close": false,
+        "show": true,
+        "ssl": false,
+        "outputs": 1,
+        "x": 1288,
+        "y": 1232.6666870117188,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa6e14c0.d1f538",
+        "type": "nbrowser",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "methods": [
+            {
+                "name": "gotoURL",
+                "func": "goto",
+                "params": [
+                    {
+                        "type": "msg",
+                        "value": "payload",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "wait",
+                "func": "wait",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "2",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "click",
+                "func": "click",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#esp32",
+                        "typeDefault": "str"
+                    }
+                ]
+            },
+            {
+                "name": "getHeaders",
+                "func": "getHeaders",
+                "params": [
+                    {
+                        "type": "output",
+                        "value": 1,
+                        "typeDefault": "output"
+                    }
+                ]
+            },
+            {
+                "name": "getText",
+                "func": "getText",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "#VTX_AccountOverview > div:nth-child(3) > div > div.col-sm-5 > div:nth-child(1) > div.panel-body.noform > div.payment_message",
+                        "typeDefault": "str"
+                    },
+                    {
+                        "type": "output",
+                        "value": 2,
+                        "typeDefault": "output"
+                    }
+                ]
+            }
+        ],
+        "prop": "nbrowser",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "close": true,
+        "show": true,
+        "ssl": true,
+        "outputs": 2,
+        "x": 1650,
+        "y": 1380,
+        "wires": [
+            [
+                "38f85fca.69878"
+            ],
+            [
+                "38f85fca.69878"
+            ]
+        ]
+    },
+    {
+        "id": "4735f3e4.13a11c",
+        "type": "inject",
+        "z": "8d1f4239.bc1b7",
+        "name": "Hallo",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hallo da draußen !",
+        "payloadType": "str",
+        "x": 1560,
+        "y": 2480,
+        "wires": [
+            [
+                "62aa4515.bac78c"
+            ]
+        ]
+    },
+    {
+        "id": "af117a24.e675f8",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 1860,
+        "y": 2540,
+        "wires": []
+    },
+    {
+        "id": "62aa4515.bac78c",
+        "type": "websocket out",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "server": "",
+        "client": "de27c776.734598",
+        "x": 1820,
+        "y": 2480,
+        "wires": []
+    },
+    {
+        "id": "5f435726.90da48",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "Beispiel websocket",
+        "info": "",
+        "x": 1340,
+        "y": 2480,
+        "wires": []
+    },
+    {
+        "id": "4c1ae4e4.9bb57c",
+        "type": "websocket in",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "server": "",
+        "client": "de27c776.734598",
+        "x": 1610,
+        "y": 2540,
+        "wires": [
+            [
+                "af117a24.e675f8"
+            ]
+        ]
+    },
+    {
+        "id": "28999e78.57ae72",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "Beispiel TCP-Request",
+        "info": "",
+        "x": 1350,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "fb380d7.51dc8f",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 2020,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "53599ce9.93ca14",
+        "type": "inject",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1570,
+        "y": 2160,
+        "wires": [
+            [
+                "bfcb8fc6.83afa"
+            ]
+        ]
+    },
+    {
+        "id": "bfcb8fc6.83afa",
+        "type": "function",
+        "z": "8d1f4239.bc1b7",
+        "name": "inject GET ",
+        "func": "msg.payload = \"GET / HTTP/1.1\\r\\n\\r\\nHost: www.google.com\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1700,
+        "y": 2220,
+        "wires": [
+            [
+                "26388c06.693e54"
+            ]
+        ]
+    },
+    {
+        "id": "9b34aaef.b26a98",
+        "type": "function",
+        "z": "8d1f4239.bc1b7",
+        "name": "aufbereiten",
+        "func": "msg.payload = msg.payload.toString('utf8');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1900,
+        "y": 2340,
+        "wires": [
+            [
+                "fb380d7.51dc8f"
+            ]
+        ]
+    },
+    {
+        "id": "26388c06.693e54",
+        "type": "tcp request",
+        "z": "8d1f4239.bc1b7",
+        "server": "www.google.com",
+        "port": "80",
+        "out": "time",
+        "splitc": "10000",
+        "name": "GOOGLE",
+        "x": 1790,
+        "y": 2280,
+        "wires": [
+            [
+                "9b34aaef.b26a98"
+            ]
+        ]
+    },
+    {
+        "id": "888c846b.796b88",
+        "type": "http in",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "url": "/gibMirDatei",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1570,
+        "y": 2620,
+        "wires": [
+            [
+                "ed2cd41.be51d28"
+            ]
+        ]
+    },
+    {
+        "id": "ed2cd41.be51d28",
+        "type": "file in",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "filename": "/tmp/node-red.png",
+        "format": "",
+        "x": 1760,
+        "y": 2620,
+        "wires": [
+            [
+                "925efc28.6f8d5"
+            ]
+        ]
+    },
+    {
+        "id": "925efc28.6f8d5",
+        "type": "change",
+        "z": "8d1f4239.bc1b7",
+        "name": "Set Headers",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "headers.content-type",
+                "pt": "msg",
+                "to": "image/png",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1960,
+        "y": 2620,
+        "wires": [
+            [
+                "ab39866f.c0b938"
+            ]
+        ]
+    },
+    {
+        "id": "ab39866f.c0b938",
+        "type": "http response",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 2120,
+        "y": 2620,
+        "wires": []
+    },
+    {
+        "id": "5741aedc.f64e5",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "Beispiel tcpin funktioniert nicht",
+        "info": "",
+        "x": 1450,
+        "y": 2680,
+        "wires": []
+    },
+    {
+        "id": "b4d07491.9b7398",
+        "type": "http in",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "url": "/hello",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1370,
+        "y": 2720,
+        "wires": [
+            [
+                "6592e50c.a10a5c"
+            ]
+        ]
+    },
+    {
+        "id": "6592e50c.a10a5c",
+        "type": "template",
+        "z": "8d1f4239.bc1b7",
+        "name": "page",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n    <head></head>\n    <body>\n        <h1>Hello World!</h1>\n    </body>\n</html>",
+        "x": 1540,
+        "y": 2720,
+        "wires": [
+            [
+                "ed404078.18327"
+            ]
+        ]
+    },
+    {
+        "id": "ed404078.18327",
+        "type": "http response",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "x": 1700,
+        "y": 2720,
+        "wires": []
+    },
+    {
+        "id": "f0f3afac.de34f",
+        "type": "comment",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "Flow Struktur",
+        "info": "Beispiele für eine bessere Struktur der Flows\n",
+        "x": 1330,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "52207b33.a91e4c",
+        "type": "inject",
+        "z": "9928af8e.21852",
+        "name": "Abfrage jede Stunde",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "8da0f528.8ccba"
+            ]
+        ]
+    },
+    {
+        "id": "8da0f528.8ccba",
+        "type": "http request",
+        "z": "9928af8e.21852",
+        "name": "Bitcoin",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.kraken.com/0/public/Ticker?pair=BTCEUR",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "7f18c8a3.656d88"
+            ]
+        ]
+    },
+    {
+        "id": "a3dd082a.1f3db",
+        "type": "debug",
+        "z": "9928af8e.21852",
+        "name": "Konsole",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e08970e0.148918",
+        "type": "comment",
+        "z": "9928af8e.21852",
+        "name": "Info zu JSON ",
+        "info": "JSON:\n      // Last ask price\n      ask: ticker.a[0],\n      // Last bid price\n      bid: ticker.b[0],\n      // Last trade closed\n      lastTrade: ticker.c[0],\n      // Volume traded in the last 24 houurs\n      volume: ticker.v[1],\n      // 24 hour low\n      low: ticker.l[1],\n      // 24 hour high\n      high: ticker.h[1],\n      // Open price\n      open: ticker.o",
+        "x": 730,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "7f18c8a3.656d88",
+        "type": "function",
+        "z": "9928af8e.21852",
+        "name": "JSON to BTC in Euro",
+        "func": "msg.payload = msg.payload.result.XXBTZEUR.a[0]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 100,
+        "wires": [
+            [
+                "a3dd082a.1f3db",
+                "a1b5f872.d82d08"
+            ]
+        ]
+    },
+    {
+        "id": "551c03f4.c0a534",
+        "type": "comment",
+        "z": "9928af8e.21852",
+        "name": "(c) 2021 Thomas Wenzlaff   www.wenzlaff.info",
+        "info": "",
+        "x": 630,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "8066fd6d.b3d0c8",
+        "type": "comment",
+        "z": "9928af8e.21852",
+        "name": "Bitcoin Kurs Ticker",
+        "info": "",
+        "x": 120,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a1b5f872.d82d08",
+        "type": "ui_gauge",
+        "z": "9928af8e.21852",
+        "g": "221f19a8.5d274e",
+        "name": "Anzeige",
+        "group": "62ad21f6.478228",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Bitcoin Kurs in Euro",
+        "label": "Euro",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 720,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f924800e.a804d",
+        "type": "ui_button",
+        "z": "9928af8e.21852",
+        "g": "221f19a8.5d274e",
+        "name": "",
+        "group": "62ad21f6.478228",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Update",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "8da0f528.8ccba"
+            ]
+        ]
+    },
+    {
+        "id": "622e582b.b2261",
+        "type": "comment",
+        "z": "9928af8e.21852",
+        "name": "www.wenzlaff.info",
+        "info": "",
+        "x": 590,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "8c6d68f.1965618",
+        "type": "inject",
+        "z": "9928af8e.21852",
+        "name": "Jede Stunde",
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 460,
+        "wires": [
+            [
+                "3198308f.b1d0b"
+            ]
+        ]
+    },
+    {
+        "id": "3198308f.b1d0b",
+        "type": "http request",
+        "z": "9928af8e.21852",
+        "name": "Covid-19 abfragen für Deutschland",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "https://covid19.mathdro.id/api/confirmed",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 240,
+        "y": 520,
+        "wires": [
+            [
+                "85336713.7e3e5"
+            ]
+        ]
+    },
+    {
+        "id": "85336713.7e3e5",
+        "type": "function",
+        "z": "9928af8e.21852",
+        "name": "Covid-19 Deutschland Meldung",
+        "func": "var nachricht = \"Bestätigte Personen mit covid-19 in Deutschland: \"  + msg.payload[8].confirmed + \n\" Genesen: \" +  + msg.payload[8].recovered + \n\" Gestorben: \" +  + msg.payload[8].deaths +\n\"  -  #covid19 #coronavirus #corona #coronavirusdeutschland #covid #virus #deutschland\";\n\nmsg.payload = nachricht;\nmsg.topic = nachricht;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 580,
+        "wires": [
+            [
+                "a29a5d6.a71512"
+            ]
+        ]
+    },
+    {
+        "id": "a29a5d6.a71512",
+        "type": "rbe",
+        "z": "9928af8e.21852",
+        "name": "Nur bei Änderung des Wert weiter",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 360,
+        "y": 640,
+        "wires": [
+            [
+                "edf4f959.998a88"
+            ]
+        ]
+    },
+    {
+        "id": "edf4f959.998a88",
+        "type": "debug",
+        "z": "9928af8e.21852",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 650,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "71ae5876.b57de8",
+        "type": "comment",
+        "z": "9928af8e.21852",
+        "name": "via Service von https://covid19.mathdro.id/api/confirmed",
+        "info": "",
+        "x": 710,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "8e007bf2.5451c8",
+        "type": "comment",
+        "z": "9928af8e.21852",
+        "name": "covid-19 Live-Ticker für Deutschland",
+        "info": "",
+        "x": 140,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "f80158f1.d27ab8",
+        "type": "inject",
+        "z": "8d1f4239.bc1b7",
+        "name": "CC:F9:E4:C2:1C:21 = Repeater",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "{\"NewMACAddress\":\"CC:F9:E4:C2:1C:21\"}",
+        "payloadType": "json",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "7b27936b.08bc8c"
+            ]
+        ]
+    },
+    {
+        "id": "7b27936b.08bc8c",
+        "type": "fritzbox-in",
+        "z": "8d1f4239.bc1b7",
+        "device": "28b24ff3.2b8f1",
+        "name": "",
+        "service": "urn:dslforum-org:service:Hosts:1",
+        "action": "GetSpecificHostEntry",
+        "arguments": "{\"NewMACAddress\":\"value\"}",
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "12274598.0e46da"
+            ]
+        ]
+    },
+    {
+        "id": "12274598.0e46da",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 570,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "55853c12.d75d54",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "info": "funktioniert\nPasswort ist fritzbospasswort , benutzername ist frei gewählt",
+        "x": 90,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "38d14011.43f0f",
+        "type": "fritzbox-callmonitor",
+        "z": "8d1f4239.bc1b7",
+        "d": true,
+        "device": "28b24ff3.2b8f1",
+        "name": "",
+        "topic": "",
+        "x": 180,
+        "y": 220,
+        "wires": [
+            [
+                "408c4f9a.5ab8d"
+            ]
+        ]
+    },
+    {
+        "id": "408c4f9a.5ab8d",
+        "type": "fritzbox-contact",
+        "z": "8d1f4239.bc1b7",
+        "device": "28b24ff3.2b8f1",
+        "name": "",
+        "topic": "",
+        "phonebook": "0",
+        "ccode": "DE",
+        "x": 450,
+        "y": 220,
+        "wires": [
+            [
+                "74bf141a.4f903c"
+            ]
+        ]
+    },
+    {
+        "id": "74bf141a.4f903c",
+        "type": "debug",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 710,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f2f63ec4.bb8ea",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "",
+        "info": "funktioniert (noch) nicht \nNote: Don't forget to enable the callmonitor service in your FritzBox. See above for instructions.",
+        "x": 140,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "8c3f54f4.1719e8",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "alternativen",
+        "info": "alternative puppeteer\nStichwort headless browser\nnode-red-contrib-selenium-wd2",
+        "x": 140,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "f7a16808.f7d0a8",
+        "type": "comment",
+        "z": "8d1f4239.bc1b7",
+        "name": "weitere",
+        "info": "https://www.himpler.com/blog/fritzbox-node-red-und-homee/",
+        "x": 440,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "bd313f29.a100a",
+        "type": "inject",
+        "z": "9608aeef.c21ce",
+        "name": "Meldung eingeben",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hallo Welt",
+        "payloadType": "str",
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "d4c3da37.8a3d88"
+            ]
+        ]
+    },
+    {
+        "id": "d4c3da37.8a3d88",
+        "type": "debug",
+        "z": "9608aeef.c21ce",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "f09290e2.fe0aa",
+        "type": "inject",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "Hallo Welt",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hallo Welt",
+        "payloadType": "str",
+        "x": 120,
+        "y": 260,
+        "wires": [
+            [
+                "e2cdcaac.3ffa48"
+            ]
+        ],
+        "outputLabels": [
+            "Meldung"
+        ]
+    },
+    {
+        "id": "e2cdcaac.3ffa48",
+        "type": "link out",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "zum debug-Node",
+        "links": [
+            "2088ebf2.30b244"
+        ],
+        "x": 255,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "2088ebf2.30b244",
+        "type": "link in",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "",
+        "links": [
+            "e2cdcaac.3ffa48",
+            "d9dce240.df004"
+        ],
+        "x": 55,
+        "y": 320,
+        "wires": [
+            [
+                "b0658a9b.1d7e48"
+            ]
+        ]
+    },
+    {
+        "id": "b0658a9b.1d7e48",
+        "type": "debug",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 170,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "200b9b72.7dc1b4",
+        "type": "comment",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "Beispiel link-in / link-out",
+        "info": "",
+        "x": 140,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1d67dd67.c032e3",
+        "type": "comment",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "Beispiel Nodes in einer horizontalen Linie",
+        "info": "",
+        "x": 200,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "856692c3.4b45a",
+        "type": "inject",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "2f5139b3.b45456"
+            ]
+        ]
+    },
+    {
+        "id": "2f5139b3.b45456",
+        "type": "function",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 280,
+        "y": 100,
+        "wires": [
+            [
+                "37863394.c5b39c"
+            ]
+        ]
+    },
+    {
+        "id": "11adab50.a406d5",
+        "type": "debug",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "37863394.c5b39c",
+        "type": "change",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 100,
+        "wires": [
+            [
+                "11adab50.a406d5"
+            ]
+        ]
+    },
+    {
+        "id": "8a865ce8.9cf3f",
+        "type": "comment",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "Beispiel Subflow",
+        "info": "",
+        "x": 120,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4a50640c.59a9dc",
+        "type": "inject",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "Subflow",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Subflow",
+        "payloadType": "str",
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "7d00d7ea.bc1aa8"
+            ]
+        ]
+    },
+    {
+        "id": "8c5cb299.89775",
+        "type": "function",
+        "z": "5730a686.4f7288",
+        "name": "",
+        "func": "var dateNow = new Date();\nvar dateAsString = dateNow.toLocaleDateString();\nvar timeAsString = dateNow.toLocaleTimeString();\nmsg.payload = dateAsString + ' ' +  timeAsString + ' ' + msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 180,
+        "y": 40,
+        "wires": [
+            [
+                "28a4a38c.49baac",
+                "26de04f9.c16d8c",
+                "51a7a732.e41d28"
+            ]
+        ]
+    },
+    {
+        "id": "58a1d93e.023738",
+        "type": "debug",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "28a4a38c.49baac",
+        "type": "delay",
+        "z": "5730a686.4f7288",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 360,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7d00d7ea.bc1aa8",
+        "type": "subflow:5730a686.4f7288",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "",
+        "env": [],
+        "x": 310,
+        "y": 480,
+        "wires": [
+            [
+                "58a1d93e.023738"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "26de04f9.c16d8c",
+        "type": "switch",
+        "z": "5730a686.4f7288",
+        "name": "Endlosschleife prüfen",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Endlosschleife",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 380,
+        "y": 220,
+        "wires": [
+            [
+                "13cc069c.4bd659"
+            ]
+        ]
+    },
+    {
+        "id": "13cc069c.4bd659",
+        "type": "link out",
+        "z": "5730a686.4f7288",
+        "name": "sub out",
+        "links": [
+            "bcf93234.45efa",
+            "7ea3e86b.3316f8"
+        ],
+        "x": 515,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "bcf93234.45efa",
+        "type": "link in",
+        "z": "5730a686.4f7288",
+        "name": "sub in",
+        "links": [
+            "13cc069c.4bd659"
+        ],
+        "x": 75,
+        "y": 220,
+        "wires": [
+            [
+                "8c5cb299.89775"
+            ]
+        ]
+    },
+    {
+        "id": "51a7a732.e41d28",
+        "type": "delay",
+        "z": "5730a686.4f7288",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "hours",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 400,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5f9488f.5d2ba8",
+        "type": "comment",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "Beispiel Gruppen",
+        "info": "",
+        "x": 120,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "38e776aa.def4da",
+        "type": "inject",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "Gruppe",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Gruppe",
+        "payloadType": "str",
+        "x": 110,
+        "y": 660,
+        "wires": [
+            [
+                "12b82ce4.4703b3"
+            ]
+        ]
+    },
+    {
+        "id": "79b53329.dd41dc",
+        "type": "debug",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "12b82ce4.4703b3",
+        "type": "function",
+        "z": "76cfa5d2.4bfa3c",
+        "g": "5e96112a.38e93",
+        "name": "",
+        "func": "var dateNow = new Date();\nvar dateAsString = dateNow.toLocaleDateString();\nvar timeAsString = dateNow.toLocaleTimeString();\nmsg.payload = dateAsString + ' ' +  timeAsString + ' ' + msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 280,
+        "y": 660,
+        "wires": [
+            [
+                "30d19c4d.55fb84",
+                "ce196b97.5201b8"
+            ]
+        ]
+    },
+    {
+        "id": "30d19c4d.55fb84",
+        "type": "delay",
+        "z": "76cfa5d2.4bfa3c",
+        "g": "5e96112a.38e93",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 480,
+        "y": 660,
+        "wires": [
+            [
+                "79b53329.dd41dc"
+            ]
+        ]
+    },
+    {
+        "id": "ce196b97.5201b8",
+        "type": "delay",
+        "z": "76cfa5d2.4bfa3c",
+        "g": "5e96112a.38e93",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 490,
+        "y": 700,
+        "wires": [
+            [
+                "79b53329.dd41dc"
+            ]
+        ]
+    },
+    {
+        "id": "b87f31b0.196fc",
+        "type": "debug",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "dbe3d29e.63cc1",
+        "type": "inject",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "Hallo Welt",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "eine Nachricht",
+        "payload": "Hallo Welt",
+        "payloadType": "str",
+        "x": 120,
+        "y": 880,
+        "wires": [
+            [
+                "b87f31b0.196fc"
+            ]
+        ],
+        "outputLabels": [
+            "Meldung"
+        ]
+    },
+    {
+        "id": "961a3c25.664a3",
+        "type": "comment",
+        "z": "76cfa5d2.4bfa3c",
+        "name": "Beispiel msg.topic",
+        "info": "",
+        "x": 124,
+        "y": 837.5999755859375,
+        "wires": []
+    }
+]
